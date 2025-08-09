@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>About Us - IYASYA</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&family=Roboto:wght@700&display=swap");
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f5f5f5;
+    }
+
+    .about-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+
+    .about {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      overflow: hidden;
+      max-width: 900px;
+      width: 90%;
+      margin: 20px;
+      position: relative;
+    }
+
+    .about img {
+      width: 50%;
+      object-fit: cover;
+    }
+
+    .text {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+    }
+
+    .text h2 {
+      margin: 0 0 20px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      color: #333;
+      font-size: 28px;
+    }
+
+    .text p {
+      margin: 0;
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .back-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .back-button button {
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-button button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button button span {
+      margin-right: 5px;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+
+      .about img {
+        width: 100%;
+        height: 200px;
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .back-button {
+        position: static;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="about-us">
+    <div class="about">
+      <div class="text">
+        <h2>About Us</h2>
+        <p>Welcome to IYASYA, your dedicated companion for mental health and well-being. Our mission is to provide accessible, compassionate, and confidential support to individuals seeking help with their mental health.</p>
+        <br>
+        <h2>Our Vision</h2>
+        <p>We envision a world where mental health care is within everyone's reach, empowering individuals to lead healthier, happier lives. We believe that everyone deserves support, and we're here to provide it whenever and wherever you need it.</p>
+      </div>
+      <div class="back-button">
+        <button onclick="goBack()">
+          <span>&#8592;</span> Back
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>

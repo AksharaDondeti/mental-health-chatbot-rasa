@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasa Chatbot Integration</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            position: relative;
+            overflow: hidden;
+        }
+        #message_container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: whitesmoke;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        form {
+            display: flex;
+            padding: 10px;
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+            position: relative;
+            z-index: 1;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            max-width: 80%;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+        .message.user {
+            align-self: flex-end;
+            background-color: #b7d0e1;
+            color: black;
+        }
+        .message.bot {
+            align-self: flex-start;
+            background-color: #91aec4;
+            color: black;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            color: rgba(0, 0, 0, 0.1);
+            z-index: 0;
+            user-select: none;
+        }
+        .back-to-home {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: maroon; /* Changed to maroon */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            z-index: 10;
+        }
+        .back-to-home:hover {
+            background-color: #800000; /* Darker shade of maroon on hover */
+        }
+        .back-to-home i {
+            margin-right: 5px;
+        }
+    </style>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            var userInput = document.getElementById('user_input').value;
+            var formData = new FormData(); // Create FormData object to send data
+
+            formData.append('user_input', userInput); // Append user input to FormData
+
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+
+            // Configure it: POST-request for the URL /index
+            xhr.open('POST', '/index', true);
+
+            // Set up callback function to handle response
+            xhr.onload = function() {
+                if (xhr.status >= 200 && xhr.status < 400) {
+                    // Success!
+                    var response = xhr.responseText;
+
+
+
+                    // Create a new paragraph element for user input
+                    var userPara = document.createElement('div');
+                    userPara.className = 'message user';
+                    var userText = document.createTextNode(userInput);
+                    userPara.appendChild(userText);
+
+                    // Create a new paragraph element for chatbot response
+                    var botPara = document.createElement('div');
+                    botPara.className = 'message bot';
+                    var botText = document.createTextNode(response);
+                    botPara.appendChild(botText);
+
+                    // Get the element where you want to append the messages
+                    var messageContainer = document.getElementById('message_container');
+
+                    // Append paragraphs to the message container
+                    messageContainer.appendChild(userPara);
+                    messageContainer.appendChild(botPara);
+
+                    // Scroll to the bottom of the message container
+                    messageContainer.scrollTop = messageContainer.scrollHeight;
+
+                    // Clear the input field after appending
+                    document.getElementById('user_input').value = '';
+                } else {
+                    // We reached our target server, but it returned an error
+                    console.error('Server error:', xhr.status);
+                }
+            };
+
+            // Handle network errors
+            xhr.onerror = function() {
+                console.error('Network error');
+            };
+
+            // Send the request with the FormData object
+            xhr.send(formData);
+        }
+    </script>
+</head>
+<body>
+    <div class="back-to-home" onclick="window.location.href = '/'">
+        <i class="fa fa-arrow-left"></i> <!-- Arrow icon -->
+        Go back to Home
+    </div>
+    <div id="message_container">
+        <!-- Messages and responses will be appended here -->
+    </div>
+    <form id="messageForm" onsubmit="submitForm(event);">
+        <input type="text" id="user_input" name="user_input" placeholder="Type your message" required>
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>

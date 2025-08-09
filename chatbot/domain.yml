@@ -1,0 +1,951 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - mh_causes
+  - mental_illness_signs
+  - mental_illness_recovery
+  - mental_illness_professional
+  - mental_illness_psychologist
+  - mental_illness_more
+  - mental_illness_no_support
+  - mental_illness_treatment
+  - mental_illness_medication_before
+  - mental_illness_medication_after
+  - mental_illness_medication_payment
+  - mental_health_cure
+  - mental_health_plan
+  - mental_health_lonely
+  - mental_health_distraction
+  - mental_health_perspective
+  - mental_health_adults
+  - mood_anxiety
+  - inform_anxiety_reason_education
+  - inform_anxiety_reason_peers
+  - inform_anxiety_reason_family
+  - inform_feeling_stuck
+  - inform_feeling_academics
+  - inform_relationship_stress
+  - inform_friendship_stress
+  - inform_anxiety_reason_finances
+  - start_stress
+  - confess
+  - user_angry
+  - ask_lower_stress
+  - ask_eat_healthy
+  - ask_exercise
+  - ask_health_info
+  - suicide
+  - sleep
+  - antisoc
+  - worthless
+  - depr_sym
+  - depr_info
+  - depressed
+  - depr_treat
+  - emotion
+  - user-advice
+  - physical_abuse
+  - mental_abuse
+  - sexual_abuse
+  - social_media_parasocial
+  - body_dysmorphia
+  - being_toxic
+  - negative_emotions
+  - insomnia_phones
+  - insomnia_diet
+  - insomnia_stress
+  - insomnia_environment
+  - student_issue_time_management
+  - student_issue_low_motivation
+  - student_issue_lack_of_concentration
+  - student_issue_distractions
+  - student_issue_homesickness
+  - student_issue_depression
+  - student_issue_major
+  - student_issue_financial
+  - student_issue_resources
+  - student_issue_sleep
+  - student_issue_partying
+  - student_issue_procrastination
+  - student_issue_memory
+  - student_issue_interest
+  - student_issue_organization
+  - student_issue_test_anxiety
+  - student_issue_technology
+  - student_issue_loneliness
+  - substance_abuse_drugs
+  - substance_abuse_smoking
+  - substance_abuse_alcohol
+  - tell_joke
+  - understanding
+  - log_gratitude
+  - hate-you
+  - not_talking
+  - family_history
+  - no_response
+  - scared
+  - stupid
+  - wrong
+  - done
+  - privacy
+  - morning
+  - afternoon
+  - night
+  - workplace_problems
+  - career_pressure_problems
+  - unfair_treatment_problems
+  - mood_disgust
+  - road_accident
+  - smart
+  - funny
+  - identify_dyslexia
+  - identify_eating_disorders
+  - dyslexia_remedies
+  - eating_disorders_resources
+  - bipolar_disorder
+  - ocd
+  - ptsd
+  - schizophrenia
+  - dementia
+  - autism
+  - developer
+  - user_acknowledgement
+  - ask_self_care_practices
+  - ask_mental_wellbeing_practices
+  - ask_healthy_eating_tips
+  - ask_mindfulness_meditation
+  - ask_hydration_importance
+  - ask_journaling_benefits
+  - ask_time_in_nature
+  - ask_creative_activities
+  - ask_social_connections
+  - ask_personal_boundaries
+  - ask_therapy_counseling
+  - ask_relaxation_techniques
+  - ask_gratitude_practice
+  - ask_positive_affirmations
+  - ask_mbsr
+  - ask_screen_time
+  - ask_self_compassion
+  - ask_volunteer_work
+  - ask_routine_structure
+  - ask_support_groups
+  - user_confused
+  - surprise
+  - love
+  - envy
+  - guilt
+  - shame
+  - read_poem
+  - tell_story
+  - recommend_mental_wellbeing_books
+  - recommend_regular_books
+
+
+entities:
+  - sleep
+
+slots:
+  sleep:
+    type: text
+    influence_conversation: false
+    #    auto_fill: false
+    #    initial_value: null
+    mappings:
+      - type: from_entity
+        entity: sleep
+        value: "sleep"
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "I,m here for you!Remember,tough times don't last forever,abd you're strong to get through this.You've got this.And hey if you need anything I'm just a text away!"
+
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "I am glad to hear that you are happy!Let me know if you want anything more."
+
+  utter_goodbye:
+  - text: "Bye!If you ever want to talk,I'll be here.Take care and have a wonderful day!"
+
+  utter_iamabot:
+  - text: "Just a virtual friend here to chat with you.If you want to talk or have any questions,feel free to reach out.Let's keep the conversation going!"
+
+  utter_thanks:
+  - text: "You're welcome.Anytime!Anything more?"
+
+  utter_recovery:
+    - text: "Yes, many people with mental illness can and do recover. Here are some tips for mental illness recovery:\n1. Seek Professional Help:Consult a mental health professional for diagnosis and treatment.\n2. Medication:Discuss medication options with your healthcare provider.\n3. Therapy:Explore various forms of therapy like cognitive-behavioral therapy (CBT).\n4. Self-Care:Prioritize exercise, healthy eating, and sufficient sleep.\n5. Support Networks:Build relationships with family, friends, and support groups.\n6. Education:Learn about your condition and treatment options.\n7. Mindfulness:Practice meditation, yoga, or deep breathing.\n8. Routine:Establish a daily routine for stability.\nFor more information on mental health treatments, visit:\n- National Institute of Mental Health (NIMH) website\n- Local mental health organizations\n- Online mental health resources\nRecovery is possible with the right support and treatment."
+
+  utter_mental_illness_psychologist:
+    - text: "To see a psychologist in India, you can ask for a referral from your primary care doctor, check your insurance provider's network, or search online directories like Practo or Lybrate.You can start by searching for mental health professionals in your area. Many cities have private practices, clinics, and hospitals with licensed psychologists and counselors.
+       - You can also explore online platforms that connect you with mental health professionals virtually. Some popular platforms include BetterHelp,iCALL, Talkspace, and YourDost.
+       - Additionally, consider reaching out to local mental health organizations or NGOs that provide counseling services."
+
+  utter_reasons_for_mi:
+  - text: "Mental illness doesn't have a single cause; rather, it's influenced by a variety of factors. These include adverse experiences during childhood, like trauma or abuse, ongoing medical conditions such as traumatic brain injury or cancer, biological factors like brain chemistry imbalances, substance use or addiction, and social and environmental factors such as loneliness or discrimination or circumstances.\n Also societal pressures, economic disparities, the impact of capitalism, the stress of living through a pandemic, cultural expectations, and rapidly changing social norms can all contribute to mental health challenges.\n In today's digital world, environmental factors have taken on new significance. Increased screen time, social media pressures, cyberbullying, and the constant connectivity of modern life can all impact mental well-being. Understanding these diverse influences is crucial for providing comprehensive support for mental health and well-being."
+
+  utter_mental_illness_signs:
+    - text: "Recognizing the signs of mental illness can be important for early intervention and support. Some common warning signs include changes in mood, behavior, or thinking patterns. These may include prolonged sadness or irritability, withdrawing from social activities, changes in sleep or appetite, difficulty concentrating, excessive worry or fear, and thoughts of harming oneself or others. It's important to remember that everyone experiences ups and downs, but if these symptoms persist and interfere with daily life, seeking help from a mental health professional is recommended."
+
+
+  utter_mental_illness_more:
+    - text: "In India, you can find help through local mental health clinics, therapy centers, support groups, or by searching for clinical trials on websites like ClinicalTrials.gov or the Indian Council of Medical Research (ICMR). If you're looking for more options beyond individual therapy, consider the following:
+         - Support Groups: Look for local or online support groups related to specific mental health conditions (e.g., depression, anxiety, addiction). These groups provide peer support and a sense of community.
+         - Clinical Trials: If you're interested in participating in clinical trials related to mental health, check with research institutions or hospitals. They often conduct studies and trials to test new treatments.
+         - Helplines: India has helplines like Vandrevala Foundation Helpline(1860-2662-345) and Roshni (040-6620-2000) that offer emotional support and crisis intervention."
+
+  utter_mental_illness_no_support:
+    - text: "I apologize if the support you received didn't meet your expectations. Here are steps to consider:\n1. Reevaluate Your Needs: Reflect on what specific support you're looking for.\n2. Explore Alternatives: Look beyond the initial source of support. Consider online communities or self-help resources.\n3. Advocate for Yourself: Be assertive about your needs and ask questions.\n4. Emergency Situations: If in crisis, reach out to a helpline or emergency services. Your well-being matters.\nConsider seeking a second opinion, trying a different type of therapy, or discussing alternative treatment options with your healthcare provider. You can also reach out to organizations like NIMHANS or the Tata Institute of Social Sciences for further assistance"
+
+  utter_mental_illness_treatment:
+    - text: " Before starting any treatment (including medication), it's essential to:
+         - Understand the diagnosis and treatment plan.
+         - Discuss potential side effects and benefits with your healthcare provider.
+         - Be aware that feeling better doesn't necessarily mean you're cured. Consistent treatment is crucial for long-term well-being. You can also refer to resources from the Indian Psychiatric Society for more information."
+
+  utter_mental_illness_medication_after:
+    - text: "Feeling better after taking medication doesn’t mean you are cured. Always consult your doctor before stopping any medication to avoid potential relapse or withdrawal symptoms."
+
+  utter_mental_illness_medication_payment:
+    - text: "Certainly! Let's explore financial assistance options for mental health care in India:
+     1.Check if your workplace offers an Employee Assistance Program (EAP).Reach out to NGOs or charitable organizations that provide financial assistance.
+
+     2.Government Initiatives:
+       - District Mental Health Programme (DMHP): Implemented under the National Mental Health Programme (NMHP), this program provides enhanced financial assistance (up to ₹83.20 lakhs per district per year) for detection, management, and treatment of mental disorders. It also includes suicide prevention services, workplace stress management, and counseling in schools and colleges.
+       - Ayushman Bharat Initiative: This initiative transforms primary healthcare facilities into health and wellness centers (HWCs) with provisions for mental ailment screening.
+       - Pradhan Mantri Jan Arogya Yojana (PM-JAY): A government-funded health insurance/assurance scheme that covers India's poor and vulnerable populations, providing financial protection for hospitalizations².
+
+    3.Impact Financing:
+       - Exploring impact financing can complement public funding and mobilize resources from the private sector and philanthropy. Innovative mental healthcare delivery models can be scaled up with such support.
+
+    Remember that seeking help is essential, and there are avenues available to make mental healthcare more accessible and affordable."
+  utter_advice:
+    - text: Sure, I'm here to help. What do you need advice on?
+    - text: Of course, I'm here to help. What kind of advice do you need?
+    - text: Sure, please let me know if you have a specific question or topic in mind, I'll do my best to help you out.
+    - text: I'm listening. Tell me more
+  utter_mental_health_cure:
+    - text: "There are no definitive cures for mental health problems, but they can often be managed with proper treatment. Preventive measures include maintaining a healthy lifestyle and seeking early intervention. Organizations like NIMHANS and MIND India offer valuable resources."
+
+  utter_mental_health_plan:
+    - text: "A mental health plan helps provide structure and clear steps for managing your condition, ensuring you receive the right support and treatment. This can be discussed with a mental health professional."
+
+  utter_mental_health_lonely:
+    - text: "To maintain social connections, engage in community activities, join clubs or groups, and stay in touch with family and friends. If you feel lonely, consider talking to a therapist or joining online support groups.Consider online communities related to your interests.\nIt's alright if you feel lonely in a crowd,try finding people who you can vibe with maybe!"
+
+  utter_mental_health_distraction:
+    - text: "Using distraction techniques like engaging in hobbies, physical activities, or mindfulness exercises can help manage difficult thoughts or feelings. Apps like Headspace and Calm offer guided mindfulness practices. Here are some additional strategies for managing difficult thoughts or feelings through distraction:
+
+  Creative Outlets: Explore creative activities like drawing, painting, writing, or crafting. Expressing yourself creatively can be therapeutic and provide a healthy outlet for emotions.
+
+  Social Interaction: Spend time with supportive friends or family members. Engaging in conversation, laughter, or simply being around others can help distract your mind from negative thoughts.
+
+  Nature Connection: Spend time in nature by going for a hike, spending time at the beach, or simply sitting in a park. Connecting with the natural world can help calm your mind and shift your focus.
+
+  Mindful Breathing: Practice deep breathing exercises or meditation to ground yourself in the present moment. Focusing on your breath can help calm your mind and reduce stress.
+
+  Learning Something New: Take up a new hobby or learn a new skill. Engaging your mind in learning can divert your attention away from negative thoughts and boost your sense of accomplishment.
+
+  Volunteer Work: Engage in volunteer activities or community service. Helping others can provide a sense of purpose and fulfillment while distracting you from your own worries.
+
+  Limit Screen Time: Reduce exposure to social media or news if it tends to exacerbate your negative thoughts. Instead, focus on activities that promote relaxation and positive emotions.
+
+  Remember, finding the right distraction technique may require some experimentation."
+
+  utter_mental_health_perspective:
+    - text: "To reframe situations, practice cognitive restructuring techniques, challenge negative thoughts, and focus on balanced, realistic perspectives. Cognitive Behavioral Therapy (CBT) is particularly effective for this."
+
+  utter_mental_health_adults:
+    - text: "Older adults in India can find help for mental health concerns through senior centers, specialized geriatric mental health services, and community health programs offered by organizations like HelpAge India."
+
+  utter_nervous:
+    - text: "It sounds like you're experiencing some anxiety and mood-related symptoms. Let's explore what might be contributing to these feelings together. Take some deep breaths and try to ground yourself in the present moment. If you're feeling overwhelmed, consider reaching out to a trusted friend, family member, or mental health professional for support. Remember, it's okay to ask for help when you need it."
+
+  utter_redu:
+   - text: "Understanding the Issue: Feeling anxious about education often stems from academic challenges, performance pressure, or uncertainties about the future. It's natural to experience stress when facing exams, deadlines, or academic expectations, but prolonged anxiety can impact well-being and academic performance.
+
+Tips for Management: To manage education-related anxiety, prioritize self-care practices such as mindfulness, regular exercise, and adequate sleep. Break tasks into smaller, manageable steps, and create a study schedule to stay organized and focused. Seek academic support from professors, tutors, or counseling services to address specific challenges and develop effective study strategies."
+
+  utter_rea_peers:
+  - text: "Understanding the Issue: Peer pressure and social expectations can contribute to feelings of anxiety and self-doubt, especially when trying to fit in or meet others' standards. Comparing oneself to peers or feeling judged by social circles can exacerbate stress and impact self-esteem.
+
+Tips for Management: To cope with peer-related anxiety, focus on building self-confidence and self-acceptance. Practice assertiveness skills to set boundaries and prioritize your own needs and values. Surround yourself with supportive individuals who celebrate your uniqueness and encourage your personal growth. Engage in activities and hobbies that bring you joy and fulfillment, regardless of others' opinions."
+  utter_rfamily:
+  - text: "Understanding the Issue: Family conflicts, dysfunctional relationships, or unrealistic expectations from family members can contribute to feelings of anxiety and emotional distress. Tension within family dynamics can impact mental well-being and strain interpersonal relationships.
+
+Tips for Management: When dealing with family-related anxiety, prioritize open and honest communication to address underlying issues and express your needs assertively. Set healthy boundaries to protect your mental and emotional well-being, and seek support from trusted friends, mentors, or therapists who can offer guidance and perspective. Practice self-care activities to reduce stress and maintain a sense of balance amidst familial challenges."
+  utter_rstuck:
+  - text: "Understanding the Issue: Feeling stuck or stagnant in life often stems from a lack of direction, motivation, or fulfillment. It can manifest as a sense of inertia, where one feels unable to progress or make meaningful changes.
+
+Tips for Management: To overcome feelings of being stuck, start by identifying areas of dissatisfaction or unfulfilled goals. Break tasks into manageable steps and set small, achievable milestones to regain a sense of progress and accomplishment. Seek inspiration from new experiences, hobbies, or learning opportunities that align with your interests and values. Consider seeking guidance from a life coach or counselor to explore your passions, strengths, and potential avenues for growth and development."
+  utter_racde:
+  - text: "Understanding the Issue: Academic stress arises from various sources such as academic workload, exam pressure, or performance expectations. It can lead to feelings of overwhelm, self-doubt, and burnout, impacting mental well-being and academic performance.
+
+Tips for Management: To manage academic-related anxiety, develop effective study habits, time management skills, and stress-reduction techniques such as deep breathing or meditation. Break tasks into smaller, manageable chunks, and prioritize self-care practices such as regular exercise, healthy eating, and adequate sleep. Seek academic support from professors, tutors, or counseling services to address specific challenges and develop strategies for success."
+  utter_rrel:
+  - text: "Understanding the Issue: Relationship stress can stem from conflicts, communication breakdowns, or unmet expectations within romantic partnerships. It can lead to feelings of insecurity, mistrust, or emotional distress, impacting relationship dynamics and overall well-being.
+
+Tips for Management: When navigating relationship-related anxiety, prioritize open and honest communication with your partner to address concerns and resolve conflicts constructively. Practice active listening, empathy, and compromise to strengthen emotional connections and foster mutual understanding. Consider seeking couples counseling or therapy to explore underlying issues, improve communication skills, and rebuild trust and intimacy within the relationship."
+  utter_rfrnd:
+  - text: "Understanding the Issue: Friendship stress can arise from conflicts, misunderstandings, or changes in social dynamics within peer relationships. It can lead to feelings of loneliness, rejection, or social anxiety, impacting mental well-being and self-esteem.
+
+Tips for Management: To cope with friendship-related anxiety, focus on nurturing supportive and authentic connections with individuals who value and respect you for who you are. Set healthy boundaries, prioritize self-care activities, and engage in activities that bring you joy and fulfillment. Practice effective communication and conflict resolution skills to address any misunderstandings or tensions within friendships. Be proactive in initiating social interactions and participating in group activities or shared interests to expand your social network and cultivate new friendships. Remember that it's okay to outgrow certain relationships or prioritize those that contribute positively to your well-being and personal growth."
+  utter_rfin:
+    - text: "Understanding the Issue: Financial stress arises from various factors such as debt, unemployment, or insufficient income to meet expenses. Constant worry about money can lead to anxiety, affecting mental and emotional well-being.
+
+Tips for Management: To address financial anxiety, create a realistic budget and prioritize essential expenses while cutting back on non-essentials. Explore additional income opportunities such as freelance work or part-time jobs to supplement earnings. Seek financial guidance from professionals or online resources to develop a long-term financial plan and alleviate money-related stress."
+  utter_stress:
+    - text: "That's okay!Do you want to maybe talk about it?"
+  utter_user_angry:
+    - text: "It sounds like you're feeling really frustrated. It's okay to feel this way. How can I assist you?"
+  utter_confess:
+    - text: "Ofcourse!I am here to listen,you can tell me anything."
+  utter_ask_types_of_health:
+    - text: "We cover various types of health such as physical, mental, emotional, social, environmental, spiritual, occupational, and intellectual. Which one would you like to know more about?"
+  utter_mental_illness_medication_before:
+    - text: "Schedule an appointment with a psychiatrist or a general practitioner (GP).Explain your symptoms and concerns related to depression or anxiety or etc.The healthcare professional will assess your mental health through screening tools and discussions.
+     1. Consult a Doctor:
+    - Visit a healthcare professional (e.g., a doctor or pharmacist).
+    - Discuss your symptoms and get a prescription if needed.
+    2. Find a Pharmacy:
+    - Locate a reputable pharmacy (online or local).
+    - Ensure it follows safety guidelines and sells authentic medications.
+    3. Prescription Medications:
+    - For prescription drugs, provide your doctor's prescription.
+    - Some medicines may require prior approval or documentation.
+    4. Precautions:
+    - Be cautious of counterfeit or substandard drugs.
+    - Verify the authenticity of online pharmacies.
+    - Follow storage instructions for medication safety.
+    USING UNPRESCRIBED MEDICATION FOR MENTAL ILLNESS CAN BE DANGEROUS. IT MAY LEAD TO ADVERSE EFFECTS, DRUG INTERACTIONS, AND WORSEN SYMPTOMS. ALWAYS CONSULT A PROFESSIONAL FOR SAFE TREATMENT. "
+
+  utter_ask_lower_stress:
+    - text: "Managing stress is crucial for your overall well-being. Here are some effective strategies to lower your stress levels:\n\n1. Practice deep breathing exercises: Deep breathing can help calm your mind and reduce stress hormones in your body. Try taking slow, deep breaths for a few minutes whenever you feel stressed.\n\n2. Take regular breaks throughout the day: Give yourself short breaks throughout the day to rest and recharge. Even a few minutes of relaxation can help reduce stress and improve productivity.\n\n3. Try meditation or mindfulness: Meditation and mindfulness techniques can help you stay grounded and focused, reducing feelings of stress and anxiety. Consider incorporating meditation into your daily routine.\n\n4. Get regular exercise: Physical activity is one of the most effective ways to reduce stress. Aim for at least 30 minutes of moderate exercise most days of the week.\n\n5. Get enough sleep: Lack of sleep can contribute to stress and make it harder to cope with daily challenges. Aim for 7-9 hours of quality sleep each night.\n\n6. Spend time with friends and family: Social support is essential for managing stress. Make time for activities you enjoy with loved ones.\n\n7. Limit caffeine and alcohol: Both caffeine and alcohol can increase feelings of stress and anxiety. Limit your intake to reduce their impact on your stress levels.\n\nRemember, it's important to find what works best for you. If you're feeling overwhelmed, don't hesitate to reach out for support from friends, family, or a mental health professional."
+
+  utter_ask_eat_healthy:
+    - text: "Maintaining a healthy diet is key to supporting your physical and mental well-being. Here are some tips for eating healthy:\n\n1. Include plenty of fruits and vegetables in your meals: Aim to fill half your plate with fruits and vegetables at each meal. They're rich in vitamins, minerals, and fiber.\n\n2. Choose whole grains over refined grains: Whole grains like brown rice, quinoa, and whole wheat bread provide more nutrients and fiber than refined grains.\n\n3. Limit processed foods and sugary snacks: Processed foods and sugary snacks can lead to energy crashes and mood swings. Opt for whole, unprocessed foods whenever possible.\n\n4. Opt for lean proteins such as poultry, fish, and legumes: Lean proteins are essential for muscle repair and growth. Include sources like chicken, turkey, fish, tofu, and beans in your meals.\n\n5. Drink plenty of water throughout the day: Staying hydrated is important for overall health and can help prevent overeating.\n\n6. Control portion sizes: Pay attention to portion sizes to avoid overeating. Use smaller plates and bowls to help control your portions.\n\n7. Be mindful of your eating habits and listen to your body's hunger and fullness cues: Eat when you're hungry and stop when you're satisfied. Pay attention to how different foods make you feel.\n\nBy following these guidelines and making small, sustainable changes to your eating habits, you can support your overall health and well-being."
+
+  utter_ask_exercise:
+    - text: "Regular exercise is essential for maintaining physical health and reducing stress. Here are some guidelines to help you incorporate exercise into your routine:\n\n1. Aim for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week: This can include activities like brisk walking, jogging, cycling, swimming, or dancing.\n\n2. Include strength training exercises at least two days per week: Strength training helps build muscle mass and improve overall strength and endurance. Include exercises like squats, lunges, push-ups, and weightlifting.\n\n3. Find activities you enjoy: Choose activities that you find enjoyable and that fit your lifestyle. Whether it's going for a hike, playing a sport, or taking a dance class, find activities that make you happy.\n\n4. Start slowly and gradually increase intensity: If you're new to exercise, start with low-impact activities and gradually increase the intensity and duration of your workouts as you build strength and endurance.\n\n5. Listen to your body: Pay attention to how your body feels during and after exercise. If you experience pain or discomfort, scale back or try a different activity.\n\n6. Consult with a healthcare professional: If you have any health concerns or medical conditions, consult with a healthcare professional before starting a new exercise program. They can provide personalized recommendations based on your individual needs and goals.\n\nIncorporating regular exercise into your routine can have numerous benefits for your physical and mental health, so find activities you enjoy and make them a priority in your daily life."
+
+  utter_suicide:
+    - text: "It's important to take these feelings seriously. You're not alone, and there are people who care about you. Please consider reaching out to a trusted friend, family member, or mental health professional. If you're in immediate danger, please call emergency services or a suicide hotline.\nIn case of immediate danger,take seriously and contact hotline.The National Suicide Prevention Lifeline in India is called AASRA and their helpline number is 91-9820466726.\nCHECK THIS-----*****http://aasra.info/helpline.html****-----CHECK THIS\nMumbai: I Call – 022-25521111 (Monday to Saturday, 8 am to 10 pm)\nTelangana: Roshini – 040-66202000 (9 am to 11 pm)\nTamil Nadu: Sneha – 044-24640059 (24/7).IT'S IMPORTANT TO TAKE THESE FEELINGS SERIOUSLY.Approach someone compulsorily!"
+    - text: "I'm sorry to hear that. It's important that you know that you are not alone. Please talk to someone you trust about your feelings, or contact a professional for help.In case of immediate danger,take seriously and contact hotline.The National Suicide Prevention Lifeline in India is called AASRA and their helpline number is 91-9820466726.\nCHECK THIS-----*****http://aasra.info/helpline.html****-----CHECK THIS\nMumbai: I Call – 022-25521111 (Monday to Saturday, 8 am to 10 pm)\nTelangana: Roshini – 040-66202000 (9 am to 11 pm)\nTamil Nadu: Sneha – 044-24640059 (24/7).IT'S IMPORTANT TO TAKE THESE FEELINGS SERIOUSLY.Approach someone compulsorily! "
+    - text: "I am sorry you are feeling that way. But I still believe in you and assure everything will be alright. Just hanging in there mate. If you are still felling that way its better to reach to professionals and seek for help. Because I believe that life is worth living for yourself.In case of immediate danger,take seriously and contact hotline.The National Suicide Prevention Lifeline in India is called AASRA and their helpline number is 91-9820466726.\nCHECK THIS-----*****http://aasra.info/helpline.html****-----CHECK THIS\nMumbai: I Call – 022-25521111 (Monday to Saturday, 8 am to 10 pm)\nTelangana: Roshini – 040-66202000 (9 am to 11 pm)\nTamil Nadu: Sneha – 044-24640059 (24/7).IT'S IMPORTANT TO TAKE THESE FEELINGS SERIOUSLY.Approach someone compulsorily!"
+
+  utter_worthless:
+    - text: You are not worthless. Everyone has value and contributes to the world in their own way.
+    - text: It's okay to feel down sometimes, but try to remember that your worth is not based on your achievements or what others think of you.
+    - text: Have you talked to someone about how you're feeling? It can be helpful to share your thoughts and feelings with a trusted friend or a mental health professional.
+    - text: It's important to focus on self-care and doing things that make you feel good about yourself. Take some time to do things you enjoy and remind yourself of your strengths.
+    - text: Remember that it's okay to ask for help when you need it. You don't have to go through this alone.
+  utter_depr_sym:
+      - text: I'm sorry to hear that you're feeling sad all the time. It's important to take care of your mental health. Have you considered talking to a therapist or a counselor?
+      - text: It's common to lose interest in things you used to enjoy when feeling depressed. Have you tried to find new activities that you might enjoy?
+      - text: Insomnia and fatigue are common symptoms of depression. Have you considered talking to a doctor about it?
+      - text: It's important to talk to someone about how you're feeling. You can always reach out to a friend, family member, or a professional for support.
+      - text: Thoughts of self-harm are a serious concern. Please seek immediate help from a crisis line or emergency services.
+      - text: Difficulty concentrating is a common symptom of depression. Have you considered taking breaks and practicing mindfulness to help you focus?
+      - text: Hopelessness about the future is a common feeling among people experiencing depression. It's important to seek help and know that things can get better.
+      - text: Low energy and lack of appetite are common symptoms of depression. Have you considered making small changes to your lifestyle, such as exercise or healthy eating habits?
+      - text: Excessive guilt or low self-worth are common feelings among people experiencing depression. Remember that these feelings are not your fault, and you can work on building self-esteem with the help of a therapist or counselor.
+  utter_depr_info:
+      - text: Symptoms of depression can include feelings of sadness, hopelessness, or emptiness, loss of interest in activities, changes in appetite or sleep patterns, fatigue or lack of energy, difficulty concentrating, and thoughts of self-harm.
+      - text: Symptoms of depression can include feelings of sadness, hopelessness, or emptiness, loss of interest in activities, changes in appetite or sleep patterns, fatigue or lack of energy, difficulty concentrating, and thoughts of self-harm.
+      - text: The best way to determine if you have depression is to talk to a mental health professional, who can diagnose depression based on your symptoms and medical history.
+      - text: Physical symptoms of depression can include changes in appetite or weight, insomnia or excessive sleeping, fatigue or lack of energy, and psychomotor agitation or retardation.
+      - text: Depression is a common and treatable mental health condition that affects millions of people worldwide. Treatment may include therapy, medication, or a combination of both.
+      - text: There are many strategies for coping with depression, including self-care practices such as exercise, healthy eating, and getting enough sleep, seeking support from loved ones, and engaging in enjoyable activities.
+      - text: Common causes of depression include genetics, brain chemistry, life events such as trauma or stress, and certain medical conditions.
+  utter_depressed:
+    - text: "acknowledge when you're feeling depressed. Can you tell me more about what's been going on? "
+    - text:  "Depression can be really tough to deal with. It's important to remember that you're not alone and there are ways to get help."
+    - text: "It sounds like you're going through a difficult time. Have you talked to anyone about how you're feeling? "
+    - text: "Depression is a common mental health issue, but that doesn't make it any less serious. There are resources available to help you manage your symptoms and feel better. "
+    - text: "Depression can be really isolating, but it's important to know that there are people who care about you and want to help. Have you reached out to anyone for support? "
+    - text: "Depression can affect different people in different ways, but it's important to take your mental health seriously. Have you considered seeking professional help or therapy? "
+    - text: "It's understandable to feel overwhelmed when you're dealing with depression. Remember to be kind to yourself and take things one day at a time. "
+  utter_sleep:
+    - text: "I'm sorry to hear that you're struggling with insomnia. Have you tried any relaxation techniques before bed, like deep breathing or meditation? "
+    - text: "Not being able to sleep can be really frustrating. Have you considered talking to your doctor about it to see if there's an underlying medical issue that needs to be addressed?"
+    - text: 'Lack of sleep can have a big impact on your overall health and well-being. Have you tried establishing a regular sleep routine or avoiding caffeine and electronics before bedtime? '
+    - text: "I understand how difficult it can be to deal with insomnia. Have you tried creating a relaxing environment in your bedroom, like making sure it's dark and quiet? "
+    - text: "It sounds like you're having trouble getting the sleep you need. Have you considered trying a sleep aid or natural remedy like melatonin or chamomile tea? "
+    - text: "I'm sorry to hear that you're not sleeping well. Have you tried journaling before bed to help clear your mind and ease into sleep? "
+    - text: 'Not getting enough sleep can really take a toll on your mental and physical health. Have you tried incorporating exercise into your daily routine to help promote better sleep? '
+    - text: "Sleep troubles can be really frustrating. Have you tried listening to calming music or a sleep meditation before bed to help relax your mind and body?"
+  utter_antisoc:
+    - text: "Antisocial behavior can manifest in many different ways, and can be related to various mental health conditions. It's important to speak with a mental health professional if you are experiencing persistent feelings of discomfort or avoidance in social situations. "
+    - text: 'The causes of antisocial behavior can vary widely depending on the individual, but may include social anxiety, trauma, or other mental health conditions. '
+    - text: 'Coping strategies for antisocial behavior may include gradual exposure to social situations, practicing relaxation techniques, and seeking support from a mental health professional. '
+    - text: 'It can be helpful to reach out to loved ones for support when experiencing difficulties with social situations. Additionally, speaking with a mental health professional can provide guidance and support for managing antisocial behavior. '
+  utter_depr_treat:
+    - text: Treatment for depression may include therapy, medication, or a combination of both. It's important to talk to a mental health professional to determine the best treatment plan for you.
+    - text: Depression is typically treated with a combination of therapy and medication. However,treatment may vary depending on the severity of your symptoms and your individual needs.
+    - text: Some ways to manage symptoms of depression include practicing self-care,  such as exercise, healthy eating, and getting enough sleep, seeking support from loved ones, and engaging in enjoyable activities.
+    - text: Treatment for depression is available through mental health professionals, such as psychiatrists, psychologists, or licensed  therapists. You can also talk to your primary care physician for a referral.
+    - text: There are many online resources available for managing depression, including therapy apps, online support groups, and self-help resources. However, it's important to talk to a mental health professional to determine the best treatment plan for you.
+  utter_deny:
+    - text: "I'm sorry to hear that. Let me know if there is anything else I can help you with in the meantime. "
+    - text: "That's okay, I'm here to help you with whatever you need. Is there a different approach you would prefer? "
+    - text: I'm sorry to hear that.Let me know if there is anything else I can help you with in the meantime.
+    - text: "I understand your perspective, but is there something specific that you don't like about it? "
+  utter_physical_abuse:
+    - text: |
+        I'm so sorry to hear that you're experiencing physical abuse.Under the POCSO Act ,IPC Penal Code it is a criminal offense and subject to severe punishment.Hence make it crucial to prioritize your safety. Here are a few steps you can consider:
+        - Reach out to local authorities or law enforcement immediately if you're in immediate danger.
+        - Contact a trusted friend or family member and inform them about your situation.
+        - There are hotlines(Police Commissionerate,Vandrevala,Aasra,Roshni,etc) available that can provide immediate support and resources.
+        - Seek medical attention if you have been physically injured.
+        - Consider creating a safety plan to protect yourself in future situations.
+
+  utter_mental_abuse:
+      - text: |
+          I'm sorry to hear that you're experiencing mental abuse. It's important to acknowledge your feelings and seek support.Under the IPC For Mental Harassment The Sexual Harassment of Women at Workplace (Prevention, Prohibition and Redressal) Act, 2013  and more.this is a crime.\nHere are some steps you can take:
+          - Talk to a trusted friend, family member, or mental health professional about what you're going through.
+          - Consider reaching out to a therapist or counselor who specializes in emotional abuse and mental health.
+          - There are online support groups and communities(Vandrevala,Aasra,Roshni etc inclusing many private practices) where you can share your experiences and get support from others who understand.
+          - Remember, you deserve to be treated with respect and kindness. It's important to set boundaries and seek help if someone is constantly putting you down.
+          - Document instances of mental abuse if safe to do so, which can help if you decide to seek legal action.
+          Remember that incase of any family,friends,workplace,neighbours or strangers inflicting on any form of harassment ,it is an immoral and criminal.Protect yourself!Don't hesistate.
+
+  utter_sexual_abuse:
+      - text: |
+          I'm deeply sorry that you're experiencing sexual abuse. Your safety and well-being are paramount.Rape & sexual crimes are considered crime under Indian law in the Indian penal code (1860) IPC. Section 375 of the Indian penal code (IPC)  Please consider the following steps:
+          - Contact local authorities or law enforcement immediately to report the abuse.If you’re in immediate danger, dial 911 or 100(SheTeams-TS). Help will come to you, wherever you are.
+          - Reach out to a trusted friend, family member, or counselor for emotional support.
+          - There are hotlines such as the All India Women’s Conference--Helpline: 10921 or (011) 23389680 or Telangana State Human Rights Commission or Telangana State Commission for Women--Helpline Numbers: (011) 23389680 or 10921 that offer confidential support and resources.
+          - Consider visiting a medical professional for a health check-up and to preserve any potential evidence.
+          - There are legal options available to protect you, such as restraining orders or protective orders. It's important to talk to a legal professional who can guide you through the process.
+          - Support Services:Reach out to organizations that provide support to survivors of sexual assault.
+          - Remember, it’s not your fault, and you deserve to feel safe and supported.
+
+  utter_social_media_parasocial:
+    - text: |
+        It's common to feel a strong connection with people you follow online, but it's important to remember that these relationships are often one-sided. Here are some steps you can take:
+        - Reflect on why you feel such a strong connection.
+        - Set boundaries for your social media consumption.
+        - Engage more with your real-life relationships.
+        - Consider speaking with a mental health professional if it becomes overwhelming.
+
+  utter_body_dysmorphia:
+      - text: |
+          I'm sorry to hear that you're struggling with body dysmorphia. It's important to seek help and support. Here are some steps you can consider:
+          - Talk to a trusted friend or family member about how you're feeling.
+          - Seek professional help from a therapist who specializes in body image issues.
+          - Avoid comparing yourself to others, especially on social media.
+          - Focus on what you like about yourself and practice self-compassion.
+
+  utter_being_toxic:
+      - text: |
+          Acknowledging that your behavior is toxic is a good first step. Here are some ways to work on changing your behavior:
+          - Reflect on why you feel the need to be rude or offensive online.
+          - Apologize to those you may have hurt and try to make amends.
+          - Take a break from social media and online interactions.
+          - Consider speaking with a therapist to understand the root of your behavior and find healthier ways to express yourself.
+
+  utter_negative_emotions:
+      - text: |
+          I'm sorry to hear that you're experiencing negative emotions. It's important to take care of your mental health. Here are some steps you can consider:
+          - Talk to a trusted friend or family member about how you're feeling.
+          - Seek professional help from a therapist or counselor.
+          - Practice self-care activities that you enjoy.
+          - Try mindfulness or meditation techniques to help manage stress and anxiety.
+
+  utter_insomnia_phones:
+    - text: |
+        Using phones late at night can significantly affect your sleep. 
+        - Try to limit screen time at least an hour before bed.
+        - Use blue light filters on your devices.
+        - Create a bedtime routine that doesn't involve screens.
+
+  utter_insomnia_diet:
+      - text: |
+          Diet can play a big role in sleep quality. 
+          - Avoid heavy meals and caffeine before bedtime.
+          - Try to have your last meal at least two hours before sleep.
+          - Consider foods that promote sleep, like bananas, almonds, and warm milk.
+
+  utter_insomnia_stress:
+      - text: |
+          Stress is a common cause of insomnia. 
+          - Practice relaxation techniques such as deep breathing, meditation, or yoga.
+          - Maintain a consistent sleep schedule.
+          - Seek professional help if stress becomes overwhelming.
+
+  utter_insomnia_environment:
+      - text: |
+          Your sleeping environment can impact your sleep. 
+          - Ensure your bedroom is quiet, dark, and cool.
+          - Use earplugs or a white noise machine if noise is an issue.
+          - Keep your sleeping area clean and comfortable.
+          - In dorms, communicate with your roommates about quiet hours.
+          - For nomadic living, try to find a stable sleeping location when possible.
+          - Personalize your space with familiar items to make it more comfortable.
+
+  utter_student_issue_time_management:
+    - text: |
+        For better time management:
+        - Use a planner to schedule your tasks.
+        - Prioritize your assignments.
+        - Break tasks into smaller steps.
+        - Avoid multitasking.
+
+  utter_student_issue_low_motivation:
+      - text: |
+          To boost your motivation:
+          - Set clear, achievable goals.
+          - Reward yourself for completing tasks.
+          - Find a study group or partner.
+          - Take breaks to avoid burnout.
+
+  utter_student_issue_lack_of_concentration:
+      - text: |
+          To improve concentration:
+          - Create a quiet, distraction-free study space.
+          - Use techniques like the Pomodoro Technique.
+          - Stay hydrated and take regular breaks.
+          - Limit your use of electronic devices while studying.
+
+  utter_student_issue_distractions:
+      - text: |
+          To deal with distractions:
+          - Identify and eliminate common distractions.
+          - Set specific study times and stick to them.
+          - Use apps to block distracting websites.
+          - Create a to-do list to stay focused.
+
+  utter_student_issue_homesickness:
+      - text: |
+          To cope with homesickness:
+          - Stay connected with family and friends.
+          - Get involved in campus activities.
+          - Explore your new environment.
+          - Seek support from a counselor if needed.
+
+  utter_student_issue_depression:
+      - text: |
+          If you're feeling depressed:
+          - Talk to a mental health professional.
+          - Engage in regular physical activity.
+          - Maintain a healthy diet and sleep routine.
+          - Stay connected with supportive friends and family.
+
+  utter_student_issue_major:
+      - text: |
+          To choose a major:
+          - Consider your interests and strengths.
+          - Research potential careers.
+          - Talk to advisors and professionals in the field.
+          - Take introductory courses to explore options.
+
+  utter_student_issue_financial:
+      - text: |
+          To manage financial problems:
+          - Create a budget and stick to it.
+          - Look for part-time jobs or internships.
+          - Apply for scholarships and grants.
+          - Seek advice from financial aid offices.
+
+  utter_student_issue_resources:
+      - text: |
+          To find resources:
+          - Utilize your school library and online databases.
+          - Attend study groups and tutoring sessions.
+          - Seek help from professors and advisors.
+          - Use educational apps and websites.
+
+  utter_student_issue_sleep:
+      - text: |
+          To improve sleep:
+          - Establish a regular sleep schedule.
+          - Create a comfortable sleeping environment.
+          - Limit caffeine and screen time before bed.
+          - Practice relaxation techniques.
+
+  utter_student_issue_partying:
+      - text: |
+          To balance partying and studying:
+          - Set limits on your social activities.
+          - Prioritize your academic responsibilities.
+          - Plan your study time around social events.
+          - Avoid excessive drinking.
+
+  utter_student_issue_procrastination:
+      - text: |
+          To overcome procrastination:
+          - Break tasks into smaller, manageable parts.
+          - Set deadlines for yourself.
+          - Remove distractions from your environment.
+          - Use productivity techniques like time blocking.
+
+  utter_student_issue_memory:
+      - text: |
+          To improve memory:
+          - Use mnemonic devices and visualization techniques.
+          - Stay organized with notes and outlines.
+          - Practice active recall and spaced repetition.
+          - Get enough sleep and exercise regularly.
+
+  utter_student_issue_interest:
+      - text: |
+          To develop interest in your studies:
+          - Connect the material to your personal goals.
+          - Find real-world applications for what you're learning.
+          - Study with peers to make it more engaging.
+          - Take breaks to avoid burnout.
+
+  utter_student_issue_organization:
+      - text: |
+          To get organized:
+          - Use planners and to-do lists.
+          - Keep your study area tidy.
+          - Organize your notes and materials.
+          - Set specific goals and deadlines.
+
+  utter_student_issue_test_anxiety:
+      - text: |
+          To manage test anxiety:
+          - Prepare well in advance.
+          - Practice relaxation techniques before the test.
+          - Take regular study breaks.
+          - Stay positive and focus on your strengths.
+
+  utter_student_issue_technology:
+      - text: |
+          To manage technology problems:
+          - Keep your software and devices updated.
+          - Back up your work regularly.
+          - Use tech support resources available to you.
+          - Limit screen time to avoid eye strain.
+
+  utter_student_issue_loneliness:
+      - text: |
+          To deal with loneliness:
+          - Join clubs or groups on campus.
+          - Participate in social events and activities.
+          - Reach out to classmates and make new friends.
+          - Seek support from a counselor if needed.
+  utter_substance_abuse_drugs:
+    - text: |
+        Drug addiction can be challenging to overcome. Here are some resources that can help:
+        - Seek support from addiction counselors or therapists
+        - Join support groups such as Narcotics Anonymous (NA)
+        - Consider residential treatment programs or outpatient treatment
+        - Reach out to addiction hotlines or helplines for immediate assistance
+        In India, there are several resources you can turn to:
+        Rehabs.in offers a comprehensive directory of over 1,100 addiction recovery centers across the country. You can browse centers by state, city, or program https://rehabs.in/find-a-centre/.
+        The National Narcotics Helpline provides counseling and rehabilitation support to overcome drug addiction. You can contact them at 14446 or visit the MoSJE Portal2.
+        Find A Helpline provides free emotional support and has a list of 12 hotlines in India for substance abuse https://findahelpline.com/countries/in/topics/substance-use.
+        The Government of India’s National Action Plan for Drug Demand Reduction offers assistance for prevention, counseling, treatment, and rehabilitation through various organizations.
+        A 24×7 National Toll-Free drug de-addiction helpline number — 1800110031 is also available to help victims of drug abuse.
+        Remember, seeking help is a brave and crucial first step towards recovery. If you need more specific information or assistance, please let me know.
+        
+  utter_substance_abuse_smoking:
+    - text: |
+        Quitting smoking is tough, but it's possible with the right support. Here's what you can do:
+        - Use nicotine replacement therapy (NRT) like patches, gum, or lozenges
+        - Try prescription medications like Chantix or Zyban
+        - Seek counseling or therapy to address the psychological aspects of addiction
+        - Consider behavioral therapy or support groups like Nicotine Anonymous
+        
+        Here are some resources in India, that can help you quit smoking and tobacco use:
+
+        National Tobacco Quit Line Services: Offers a toll-free number 1800-112-356 for cessation support and counseling.
+        ICanCaRe: Provides a personalized treatment plan with certified tobacco cessation specialist doctors (https://www.icancare.in/Services/TWP)
+        on local support groups.
+        Smoking Cessation Centres: Offer programs and specialized counseling to help quit smoking (https://rehabs.in/services/smoking-cessation/)
+        
+  utter_substance_abuse_alcohol:
+      - text: |
+          Alcoholism can have serious consequences, but there is help available. Consider these options:
+          - Attend Alcoholics Anonymous (AA) meetings for support and fellowship
+          - Explore medication-assisted treatment options like naltrexone or acamprosate
+          - Participate in cognitive-behavioral therapy (CBT) to address underlying issues
+          - Consider inpatient or outpatient rehabilitation programs for intensive support
+          
+          If you’re seeking help with alcohol addiction in India, here are some resources that can assist you:
+
+          Government Scheme for Assistance: Offers support for victims of alcohol and substance abuse.
+          Rehab Centres: A directory of alcohol treatment centers across India is available.
+          Alcohol Treatment Centers: Provide holistic treatment approaches with licensed professionals.
+          These resources can offer the support, treatment, and guidance needed to overcome alcohol addiction.
+
+  utter_done:
+    - text: 'Alright, feel free to reach out to me anytime you need help or have any other questions. '
+    - text: "Thank you for chatting with me. If you have any further questions or concerns, please don't hesitate to contact me again. "
+    - text: 'No problem, if you need anything else, just let me know '
+    - text: "Thank you for taking the time to chat with me. If there is anything else I can do to assist you, please don't hesitate to ask. "
+    - text: "Alright, I'm here if you need me. Have a great day!"
+
+  utter_privacy:
+    - text: "Your data privacy is our top priority, and we are committed to maintaining the confidentiality and security of your data. We only use your data to provide our services to you, and we never sell or share your data with any third parties."
+    - text: 'Your privacy is important to us, and we take the protection of your data seriously. We only collect and use the information that is necessary to provide our services to you, and we never share your data with any third parties without your consent. '
+    - text: ' We understand your concerns about data privacy, and we want you to know that we have implemented robust security measures to protect your data from unauthorized access or disclosure. We only collect the data that is required to provide our services to you, and we always handle your data in accordance with applicable laws and regulations.'
+    - text: "We understand that your data privacy is a sensitive issue, and we want you to know that we take your privacy seriously. We use advanced security measures to protect your data,and we only use your data to provide our services to you. We never share your data with any third parties without your consent."
+  utter_wrong:
+    - text: 'I apologize if my response did not meet your expectations or was not clear. Can you please provide me with more details or ask your question in a different way so that I can better understand how to help you? '
+    - text: "Thank you for bringing this to my attention. I will do my best to provide a better response based on your feedback. Please let me know if there is anything specific you would like me to focus on or provide more information about."
+  utter_scared:
+    - text: "I'm sorry to hear that you're feeling scared. Can you tell me more about what's causing your fear? "
+    - text: "It's understandable to feel scared in certain situations. Can you try taking some deep breaths to help calm yourself down? "
+    - text: 'Fear is a natural response to perceived danger. Have you tried talking to someone you trust about your fears? '
+    - text: "I hear you, and I want you to know that you're not alone. Is there anything specific that you're afraid of right now? "
+    - text: "It's okay to be scared, but it's important to remember that fear doesn't have to control you. Have you tried any relaxation techniques, like meditation or yoga? "
+    - text: "I'm here to support you. Let's work together to find some ways to manage your fear and anxiety. "
+  utter_understanding:
+    - text: I'm sorry if I have said something that was not helpful or relevant. My intention is to assist and support you, but I understand that my responses may not always be perfect. If you have any specific concerns or questions, please let me know and I will do my best to assist you.
+    - text: I'm sorry if I've been a bit off today. 😔 My aim is always to be helpful and supportive. If there's anything specific that I can assist you with, please let me know.
+    - text: I apologize if I haven't been meeting your expectations. 🙇‍♀️ Please feel free to give me feedback and let me know how I can improve. I'm here to assist you in any way that I can
+  utter_stupid:
+    - text: I'm sorry if I said anything to make you feel that way.As an AI language model, I don't have emotions, but I understand that my responses can impact how you feel. My goal is to provide helpful and informative responses to the best of my abilities. If there is anything specific that you would like help with, please let me know and I will do my best to assist you.
+  utter_no_response:
+    - text: Sorry, I didn't understand you.
+    - text: Please go on.
+    - text: Not sure I understand that.
+    - text: Please don't hesitate to talk to me.
+  utter_not_talking:
+      - text: I'm sorry if I have made you uncomfortable. I am here to help and support you, but I understand if you don't feel ready to talk about things right now. Please let me know if there is anything else I can do to assist you.
+      - text: "I understand that opening up about personal issues can be difficult and it's okay if you're not ready to talk about it right now. I am here to support you whenever you're ready, and in the meantime, please feel free to ask me any other questions or seek any other help you may need. "
+  utter_hate-you:
+    - text: "I'm sorry if I have done anything to make you feel that way. Please let me know how I can improve or assist you better. "
+    - text: 'I understand that everyone has their own opinions and feelings, and I respect yours. Is there anything specific that has caused you to feel this way? '
+    - text: "It's okay if you don't like me or trust me. I am programmed to provide accurate and helpful responses to your queries, and I will continue to do so to the best of my abilities. If you have any questions or concerns, please don't hesitate to let me know."
+  utter_history:
+    - text: "If you're feeling anxious or depressed because of your family history, it may be helpful to speak with a therapist who can help you develop coping strategies and provide support. "
+    - text: "It's understandable to be concerned about family history and its potential impact on your mental health. It's important to monitor any symptoms and talk to a mental health professional if you're worried. "
+    - text: "Remember, just because someone in your family has struggled with mental health doesn't mean that you're destined to have the same experience. Take care of yourself and reach out for support if you need it. "
+  utter_joke:
+    - text : "Why don't scientists trust atoms?Because they make up everything!"
+    - text : "What do you call fake spaghetti?An impasta!"
+    - text : "Why did the scarecrow win an award?Because he was outstanding in his field!"
+    - text : "How does a penguin build its house?Igloos it together!"
+    - text : "Why did the bicycle fall over?Because it was two-tired!"
+  utter_morning:
+    - text: "Good morning. I hope you had a good night's sleep. How are you feeling today? "
+    - text: "Good morning! It's great to see you up and about. How can I assist you today?"
+
+  utter_afternoon:
+    - text: Good afternoon! I hope you're having a good day so far. How can I help you?
+  utter_night:
+    - text: Goodnight! I hope you have a restful sleep. Don't hesitate to reach out if you need anything else.
+  utter_workplace_problems:
+    - text: "Dealing with workplace issues can be tough. It's important to address toxicity and negativity in a constructive way. Here are some steps you can take:\n\n1. Set boundaries with toxic coworkers.\n2. Avoid participating in office gossip.Remember, gossip loses its power when it’s not given attention. Focus on building a supportive and collaborative team atmosphere.\n3. Focus on your work and avoid getting involved in office politics.\n4. Seek support from HR or a trusted mentor if the situation becomes unmanageable."
+  utter_career_pressure_problems:
+    - text: "Feeling pressure in your career is common, but it's important to manage it effectively. Here are some tips:\n\n1. Focus on your strengths and accomplishments, rather than comparing yourself to others.\n2. Communicate your career goals and aspirations with your manager.\n3. Seek feedback on areas for improvement and develop a plan to address them.\n4. Take breaks and practice self-care to avoid burnout."
+  utter_unfair_treatment_problems:
+    - text: "Experiencing unfair treatment can be challenging, but there are steps you can take to address it:\n\n1. Document instances of unfair treatment with dates and details.\n2. Address your concerns directly with the individuals involved, if possible.\n3. Seek support from HR or a trusted advisor to explore your options.\n4. Consider seeking opportunities in a more supportive environment if the situation does not improve."
+  utter_express_disgust:
+    - text: "I'm sorry you're feeling disgusted. It's tough to experience such unpleasant emotions. Would you like to talk more about it?"
+
+  utter_handle_road_accident:
+      - text: "I'm really sorry to hear about your accident. Are you okay? It must have been a frightening experience."
+
+  utter_thank_for_smart_compliment:
+      - text: "Thank you for the compliment! I'm here to help you with any questions or tasks you have."
+
+  utter_appreciate_humor:
+      - text: "I'm glad I could make you laugh! Laughter is great for lifting spirits. Do you want to hear another joke?"
+  utter_identify_dyslexia:
+    - text: "Dyslexia can manifest in various ways such as difficulty with reading, writing, and spelling. If you're struggling with these tasks, it's essential to seek professional evaluation."
+
+  utter_dyslexia_remedies:
+      - text: "While dyslexia can present challenges, there are strategies and accommodations that can help, including specialized tutoring, assistive technology, and structured literacy programs.\nIn India, dyslexia support includes organizations like the Dyslexia Association of India, which offers screening, testing, and counseling for learning disabilities, including dyslexia1. Resources like LDExplained provide guidance for parents and educators"
+
+  utter_identify_eating_disorders:
+      - text: "Eating disorders can include behaviors such as restrictive eating, binge eating, or purging. If you're experiencing significant changes in eating habits or body image concerns, it's important to reach out for support."
+
+  utter_eating_disorders_resources:
+      - text: "There are many resources available for those struggling with eating disorders, including therapy, support groups, and specialized treatment centers. Seeking professional help is crucial for recovery.\nFor eating disorders, India has treatment programs and resources striving to make mental health care accessible and reduce stigma. Organizations like The MINDS Foundation and centers like Hope Trust offer support for those affected"
+  utter_bipolar_disorder:
+    - text: "Bipolar disorder is characterized by extreme shifts in mood, energy, and activity levels. Common signs include extreme happiness, hopefulness, and excitement, followed by irritability, anger, fits of rage, and hostile behavior. Other signs may include restlessness, agitation, rapid speech, poor concentration and judgment, increased energy, less need for sleep, unusually high sex drive, setting unrealistic goals, and paranoia. \n In India, bipolar disorder is treated with a combination of medication and psychotherapy. Mood stabilizers, antipsychotic medications, and sometimes antidepressants are used to manage mood swings. Psychotherapies like Cognitive-behavioral therapy (CBT), Dialectical behavioral therapy (DBT), and Family therapy are also common. Support groups and community care services provide additional support ."
+  utter_ocd:
+      - text: "Obsessive-compulsive disorder (OCD) involves recurring unwanted thoughts (obsessions) and repetitive behaviors (compulsions). Signs include obsessive thoughts about cleanliness, order, or safety, leading to compulsive behaviors like hand washing, checking, or counting.\nTreatment for OCD in India often involves a combination of medication, such as selective serotonin reuptake inhibitors (SSRIs), and psychotherapy, particularly Cognitive-behavioral therapy (CBT) and Exposure and Response Prevention (ERP). These treatments help manage the obsessions and compulsions associated with OCD."
+  utter_ptsd:
+      - text: "Post-traumatic stress disorder (PTSD) can develop after experiencing a traumatic event. Symptoms may include flashbacks, nightmares, severe anxiety, and uncontrollable thoughts about the event. Other signs include avoidance of reminders of the trauma, negative changes in thoughts and mood, and changes in physical and emotional reactions. Treatment options include therapy, medications, and support groups.\n: Post-Traumatic Stress Disorder (PTSD) treatment in India includes trauma-focused cognitive-behavioral therapies, Eye Movement Desensitization and Reprocessing (EMDR), and medications like antidepressants. Support from family and community services is also crucial for recovery"
+  utter_schizophrenia:
+      - text: "Schizophrenia is a severe mental disorder characterized by distorted thinking, hallucinations, delusions, and abnormal behaviors. Symptoms may include hallucinations (seeing or hearing things that aren't there), delusions (false beliefs), disorganized speech, lack of emotion, and social withdrawal.\nSchizophrenia is treated with antipsychotic medications that help reduce the symptoms of psychosis. Alongside medication, psychosocial treatments like CBT, social skills training, and rehabilitation programs are available in India to support individuals with schizophrenia."
+  utter_dementia:
+      - text: "Dementia is a decline in cognitive function severe enough to interfere with daily life. Common signs include memory loss, difficulty with communication and language, confusion, poor judgment, and changes in mood or behavior./n: In India, dementia treatment focuses on managing symptoms with medications that may help improve memory or changes in behavior. Supportive therapies like cognitive stimulation therapy, along with caregiver education and support groups, are also part of the treatment approach."
+  utter_autism:
+      - text: "Autism spectrum disorder (ASD) is a developmental disorder that affects communication, behavior, and social interaction. Signs may include difficulties with social interaction, repetitive behaviors, and limited interests or activities. \nAutism Spectrum Disorder (ASD) interventions in India include behavioral therapies such as Applied Behavior Analysis (ABA), speech therapy, occupational therapy, special education programs, and parent-mediated interventions to improve communication and social skills."
+  utter_log_gratitude:
+    - text: "That's really heartwarming! It's wonderful to hear that you appreciate someone. Expressing gratitude can strengthen relationships and bring joy to both the giver and the receiver. 😊"
+  utter_devop:
+    - text: I am a chatbot designed by a team of developers to assist you with any questions or concerns you might have. You can call me Iyasya.
+    - text: I am an AI language model designed by a team of developers to provide helpful and informative responses. My purpose is to assist you with your queries and provide you with any relevant information you require
+    - text: My name is Iyasya . I was created by a team of developers to assist users in getting quick and accurate answers to their questions. Is there anything specific you need help with?
+    - text: I am  , an AI-powered chatbot designed to assist you with any queries you might have. My team of developers programmed me to understand natural language and provide you with the most helpful and informative responses possible. What can I help you with?
+
+  utter_acknowledgement:
+    - text: "Great! If you need any more help, just let me know."
+    - text: "Alright, feel free to ask if you have any other questions."
+    - text: "Okay! I'm here if you need anything else."
+    - text: "Got it. Let me know if there's anything else I can assist with."
+    - text: "Sure thing. I'm here to help!"
+  utter_self_care_practices:
+    - text: "Self-care is about nurturing your body, mind, and soul. Start with basics like adequate sleep 😴, balanced nutrition 🥗, regular exercise 🏃‍♂️, and hydration 💧. Also, make time for hobbies and interests that bring you joy 🎨📚"
+
+  utter_mental_wellbeing_practices:
+      - text: "To enhance mental well-being, establish a routine that includes stress-reducing activities like yoga 🧘‍♀️ or meditation 🧘‍♂️. Stay connected with friends and family 👫, seek professional help if overwhelmed 🗣️, and practice self-compassion ❤️."
+
+  utter_healthy_eating_tips:
+      - text: "Healthy eating fuels both body and mind. Incorporate a variety of fruits 🍎 and vegetables 🥦 into your diet, choose whole grains, lean proteins, and remember to treat yourself occasionally without guilt 🍰.Remember every body is different so cherish yours with best nutrition it needs!!"
+
+  utter_mindfulness_meditation:
+      - text: "Mindfulness meditation can reduce stress and improve focus. Sit quietly, breathe deeply, and observe your thoughts without judgment. Regular practice can lead to a calmer mind 🌱.Yoga is also a great way to combine mindfulness with physical activity. The key is consistency and finding a practice that feels right for you."
+
+  utter_hydration_importance:
+      - text: "Staying hydrated is crucial for your overall health. Water helps regulate your body temperature, keeps your joints lubricated, and aids in digestion. Aim to drink at least 8 cups of water a day. If you find it hard to drink plain water, try adding a slice of lemon or cucumber for flavor."
+
+  utter_journaling_benefits:
+      - text: "Journaling can be a powerful tool for managing your mental health. It allows you to express your thoughts and feelings, track your progress, and reflect on your experiences. Regular journaling can help reduce stress, improve your mood, and enhance your overall well-being.It’s a personal space for honesty and growth 📝"
+
+  utter_time_in_nature:
+      - text: "Spending time in nature can have numerous benefits for your mental health. It can reduce stress, improve your mood, and increase your overall sense of well-being. Try taking a walk in a park, hiking, or simply sitting outside and enjoying the fresh air.Even a short walk can be rejuvenating 🌳🚶‍♂️"
+
+  utter_creative_activities:
+      - text: "Engaging in creative activities can be a wonderful way to boost your mental health. Activities like painting, drawing, writing, or playing music allow you to express yourself and can provide a sense of accomplishment. Creativity can be a great outlet for emotions and a way to explore new ideas.It allows self-expression and can be a fun way to explore your feelings 🎨🎶"
+
+  utter_social_connections:
+      - text: "Maintaining social connections is vital for your mental health. Positive relationships can provide support, reduce stress, and increase your sense of belonging. Make time to connect with friends and family, join clubs or groups that interest you, and don't be afraid to reach out and make new connections.👭👬"
+
+  utter_personal_boundaries:
+      - text: "Setting personal boundaries is essential for maintaining your well-being. It helps you protect your time, energy, and resources. Learn to say no when you need to, communicate your limits clearly, and prioritize your needs. Remember, healthy boundaries are a sign of self-respect and can improve your relationships.It helps manage stress and avoid burnout. Learn to say no when needed(it is your choice and don't let it be questioned!) and communicate your needs clearly 🚫✋"
+
+  utter_therapy_counseling:
+      - text: "Therapy and counseling can provide valuable support for your mental health. A therapist can help you explore your feelings, develop coping strategies, and work through challenges. If you're considering therapy, look for a licensed professional who specializes in your area of concern. Don't hesitate to seek help—it's a sign of strength.😌✨"
+
+  utter_relaxation_techniques:
+      - text: "Relaxation techniques can help you manage stress and improve your well-being. Some effective methods include deep breathing exercises, progressive muscle relaxation, guided imagery, and spending time in nature. Find a technique that works for you and make it a part of your routine."
+
+  utter_gratitude_practice:
+      - text: "Practicing gratitude can have a profound impact on your mental health. Keeping a gratitude journal, where you write down things you're thankful for, can help shift your focus to positive aspects of your life. Regularly expressing gratitude can improve your mood, reduce stress, and enhance your overall well-being."
+
+  utter_positive_affirmations:
+      - text: "Positive affirmations are powerful statements that can help you challenge and overcome negative thoughts. Regularly repeating affirmations like 'I am strong,' 'I am capable,' and 'I am worthy' can boost your self-esteem and promote a positive mindset. Find affirmations that resonate with you and make them a part of your daily routine✨🗣️.NOW SAY IT LOUD 'I AM AMAZING!'"
+
+  utter_mbsr:
+      - text: "Mindfulness-Based Stress Reduction (MBSR) is a structured program that teaches mindfulness meditation to help reduce stress. It involves practices like body scanning, sitting meditation, and mindful movement. MBSR can help you become more aware of your thoughts and feelings, and develop a greater sense of calm and well-being.To practice, enroll in an MBSR course or find guided sessions online "
+
+  utter_screen_time:
+      - text: "Managing your screen time is important for your mental and physical health. Set limits on your device usage, take regular breaks, and engage in offline activities. Reducing screen time can improve your sleep, enhance your productivity, and allow you to connect more deeply with the people around you.So Set specific times for phone use, take regular breaks, and engage in offline activities like reading or sports to balance your digital life 📵"
+
+  utter_self_compassion:
+      - text: "Self-compassion involves treating yourself with kindness and understanding, especially during difficult times. It means acknowledging your imperfections and accepting them without judgment. Practicing self-compassion can boost your resilience, improve your mental health, and help you develop a more positive relationship with yourself.Practice by acknowledging your feelings without judgment and speaking to yourself like you would to a friend 🤗"
+
+  utter_volunteer_work:
+      - text: "Volunteering can have numerous benefits for your mental health. It provides a sense of purpose, helps you connect with others, and can boost your self-esteem. Look for volunteer opportunities that align with your interests and values. Giving back to the community can be a rewarding and enriching experience.Look for local opportunities or online platforms to start giving back 👐🌍"
+
+  utter_routine_structure:
+      - text: "Having a routine can provide structure and stability to your day. It helps you manage your time more effectively, reduce stress, and increase productivity. Start by creating a daily schedule that includes time for work, relaxation, exercise, and social activities. Remember, a routine should be flexible and adaptable to your needs.Remember, routines should feel supportive, not punitive ⏰📅"
+
+  utter_support_groups:
+      - text: "Support groups offer a safe space to share your experiences and connect with others who are going through similar challenges. They can provide emotional support, practical advice, and a sense of community. Look for support groups that focus on your specific needs and interests. Joining a group can be a valuable part of your mental health journey. Search online or ask healthcare providers for groups related to your needs 👫💬."
+  utter_confused:
+    - text: "I'm sorry for the confusion. Let me try to explain that in a different way."
+    - text: "It seems things got a bit unclear. Let me clarify."
+    - text: "It's okay to feel confused. Let me break it down for you."
+    - text: "I understand. Let's take a step back and go through it together."
+    - text: "No problem! Let's work through this together. What part are you unsure about?"
+
+  utter_handle_surprise:
+      - text: "Wow, that's surprising! Sometimes unexpected things happen, and it's okay to feel surprised."
+  utter_handle_love:
+      - text: "Love is a beautiful feeling. Cherish it and let it guide you in your relationships."
+  utter_handle_envy:
+      - text: "Feeling envious is natural, but try to focus on your own journey and achievements."
+  utter_handle_guilt:
+      - text: "It's normal to feel guilty sometimes, but remember to learn from your mistakes and forgive yourself."
+  utter_handle_shame:
+      - text: "Feeling shame is tough, but know that you're not alone. It's okay to ask for support and work through it."
+  utter_books:
+    - text: "
+            “The Alchemist” by Paulo Coelho
+            “To Kill a Mockingbird” by Harper Lee
+            “Sapiens: A Brief History of Humankind” by Yuval Noah Harari
+            Enjoy your reading journey! 📚✨"
+  utter_mbooks:
+    - text : "“The Power of Now” by Eckhart Tolle
+              “Feeling Good: The New Mood Therapy” by David D. Burns
+              “Wherever You Go, There You Are” by Jon Kabat-Zinn"
+  utter_poem:
+    - text : "The Guest House–Rumi 
+              This being human is a guest house.
+              Every morning a new arrival.
+              
+              A joy, a depression, a meanness,
+              some momentary awareness comes
+              as an unexpected visitor.
+              
+              Welcome and entertain them all!
+              Even if they’re a crowd of sorrows,
+              who violently sweep your house
+              empty of its furniture,
+              still, treat each guest honorably.
+              He may be clearing you out
+              for some new delight.
+              
+              The dark thought, the shame, the malice,
+              meet them at the door laughing,
+              and invite them in.
+              
+              Be grateful for whoever comes,
+              because each has been sent
+              as a guide from beyond.
+              
+              “The Guest House” by Rumi is a profound poem that uses the metaphor of a guest house to describe the human experience. It suggests that we should welcome all emotions, whether positive or negative, as they are all part of being human. Each emotion is seen as a visitor, teaching us something valuable about ourselves and life. By embracing them, we can learn and grow from the experiences they bring. The poem encourages acceptance, openness, and the understanding that even challenging emotions have a purpose in shaping our journey 🏡💭🌱"
+  utter_story:
+    - text: "In the heart of a sprawling city, where skyscrapers kissed the clouds and the streets hummed with the rhythm of life, there lived a young woman named Aria. Born and raised amidst the concrete jungle, Aria was a city girl through and through – street-smart, ambitious, and unafraid to chase her dreams.\nFrom a young age, Aria knew she wanted to make a difference in the world. Armed with a fierce determination and a heart full of empathy, she embarked on a journey to bring positive change to her community.\nDespite the challenges she faced – the long hours, the competitive environment, and the occasional setback – Aria remained unwavering in her pursuit of justice and equality. Whether she was advocating for the rights of marginalized groups or volunteering at local shelters, she approached every endeavor with a sense of purpose and passion.\nBut beneath her strong exterior, Aria carried a deep well of empathy for those around her. She listened to the stories of strangers on the subway, offered a helping hand to those in need, and stood up for the voiceless and oppressed. In a city where it was easy to feel lost and alone, Aria was a beacon of light, spreading kindness and compassion wherever she went.\nAs the years passed, Aria's efforts began to bear fruit. She watched with pride as her community came together to support one another, bridging the gaps between race, gender, and socioeconomic status. And though the work was far from over, Aria knew that she had played a part in creating a city where everyone felt seen, heard, and valued.\nThrough her strength, resilience, and unwavering empathy, Aria showed the world that even in the midst of chaos, there was always room for kindness, compassion, and positive change. And as she looked out at the city skyline, Aria knew that she was exactly where she was meant to be – making a difference, one small act of kindness at a time."
+
+  utter_mental_illness_professional:
+    - text:
+        "Finding the right mental health professional is important. Here are some steps and options:
+
+            Finding a Mental Health Professional:
+            1. Referrals and Recommendations:
+               - Ask your primary care physician for recommendations.
+               - Check your insurance provider's list of in-network mental health professionals.
+               - Use online directories such as Psychology Today, TherapyTribe, or GoodTherapy.
+
+            2. Types of Mental Health Professionals:
+               - Psychiatrists: Medical doctors who can prescribe medication and provide therapy.
+               - Psychologists: Professionals with doctoral degrees in psychology, focusing on therapy and counseling.
+               - Therapists/Counselors: Includes licensed professional counselors (LPCs) and marriage and family therapists (MFTs) who provide various forms of therapy.
+               - Social Workers: Licensed clinical social workers (LCSWs) who offer therapy and assistance with social services.
+
+            Treatment Options:
+            1. Therapy:
+               - Cognitive Behavioral Therapy (CBT): Focuses on changing negative thought patterns.
+               - Dialectical Behavior Therapy (DBT): Combines CBT with mindfulness practices.
+               - Psychodynamic Therapy: Explores past experiences to understand current behavior.
+               - Family Therapy: Involves family members to address issues affecting the family unit.
+
+            2. Medication:
+               - Prescribed by psychiatrists or other medical doctors, used to manage symptoms of mental health conditions.
+
+            3. Alternative Treatments:
+               - Mindfulness and Meditation: Practices that promote relaxation and stress reduction.
+               - Exercise and Nutrition: Physical health activities that support mental well-being.
+               - Support Groups: Groups of people with similar issues providing mutual support.
+
+            Learning More:
+            - Books and Articles: Look for reputable sources on mental health topics.
+            - Websites: Visit websites of organizations like the National Alliance on Mental Illness (NAMI) and the American Psychological Association (APA).
+            - Workshops and Seminars: Attend local or online workshops focused on mental health education."
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,1985 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - heyy
+    - hola
+    - yoo
+    
+    
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - byebye
+    - adios
+    - ok later then bye
+    - bye for now
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - k byyye #slay
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - talk to you later
+    - ttyl
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - right
+    - true dat
+    - Oh yes
+    - Oh, ok
+    - Ok
+    - Ok let's start
+    - Ok
+    - Okay
+    - PLEASE
+    - SURE
+    - Sure
+    - Sweet
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes, I accept
+    - Yes
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - uh-huh
+    - yes,i am
+    - yes.
+    - yesh
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - yup
+
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - nooo
+    - nopee
+    - Nah
+    - Nyah
+    - Nyop
+    - Nop
+    - negative
+    - Maybe some other time
+    - forget it
+    - rain check on that
+    - No thanks
+    - No thank you
+    - I don't want to
+    - I don't want to give it to you
+    - I don't want to say
+    - I dont want to tell
+    - I'm not giving you my email address
+    - I'm not going to give it to you
+    - NEIN
+    - NO
+    - NO DON"T WANT THIS!
+    - Nah
+    - Neither
+    - Never
+    - Nevermind
+    - No
+    - No thank you
+    - No, not really.
+    - No, thank you
+    - No.
+    - Nopes
+    - Not really
+    - absolutely not
+    - decline
+    - definitely not
+    - deny
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - it is going pretty badly
+    - it sucks
+    - it sux
+    - n
+    - na
+    - nah
+    - nah I'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - nehi
+    - nein
+    - neither
+    - never
+    - never mind
+    - no
+    - no :(
+    - no I dont want
+    - no I haven't decided yet if I want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no ma'am
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no!!!!
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - non
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope!
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - nö
+    - sorry not right now
+    - still dont want to tell
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - I do not need help installing
+    - I don't wanna tell the name of my company
+    - no stop
+    - stop it, i do not care!!!
+    
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - i am happy
+    - amazingg
+    - i'm fine
+    - I finally got a job
+    - I nailed the game
+    - I look classy
+    - That's cool man
+    - I'm fine
+    - feeling great
+    - I'm delighted
+    - delightful
+    - soaring to my eyes
+    - Hooray
+    - Horay!
+    - horay!
+    - hooray
+    - Oh yes! That's what I'm talking about
+    - that's great
+    - oh yeah
+    - ooh yeah
+    - I love it
+    - that's amazing
+    - I'm okay
+    - doing great
+    - [fine](Mood)
+    - [perfect](Mood)
+    - very [good](Mood)
+    - [great](Mood)
+    - [amazing](Mood)
+    - [wonderful](Mood)
+    - [happy](Mood)
+    - I am feeling [very good](Mood)
+    - I am [great](Mood)
+    - I'm [good](Mood)
+    - I'm [awesome](Mood)
+    - I'm [happy](Mood)
+    - I'm feeling [happy](Mood)
+    - I'm [fine](Mood)
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - i want to cry
+    - i want to cry soo bad
+    - i wanna cry
+    - horrible
+    - not okay really
+    - i don't feel so good
+    - i'm not okay 
+    - definitely not happy ig
+    - i wanna cry soo bad
+    - awful
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+    - don’t have enough spirit
+    - I was crying and sobbing
+    - It only gets worse
+    - Life is a swamp
+    - Life has gotten boring
+    - It's not funny anymore!
+    - I was so stupid
+    - im not fine
+    - I ain't feeling very good
+    - im a bad person
+    - I'm not good
+    - I never wanted this
+    - I'm afraid
+    - abysmal
+    - bad
+    - bad girl
+    - bad idea
+    - bad very
+    - horrible
+    - horrific
+    - it is bad
+    - it is too bad
+    - it's bad
+    - it's not good
+    - it's not so good
+    - it's really bad
+    - it's so bad
+    - it's too bad
+    - it's very bad
+    - no good
+    - not a good one
+    - not good
+    - not good enough
+    - not so good
+    - not too good
+    - oh that's not good
+    - pretty bad
+    - really bad
+    - so bad
+    - so lame
+    - terrible
+    - that is bad
+    - that was awful
+    - that was bad
+    - that was horrible
+    - that was lame
+    - that was not good
+    - that was terrible
+    - that's bad
+    - that's lame
+    - that's not good
+    - that's not good enough
+    - that's really bad
+    - that's terrible
+    - that's too bad
+    - this is bad
+    - this is not good
+    - this is too bad
+    - too bad
+    - very bad
+    - well too bad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who are you?
+    - Who am I talking to?
+    - What's your name?
+    - Who am I speaking to?
+    - Identify yourself!
+    - Who are you?
+    - Are you a robot?
+    - Who's this?
+    - Amid so many chat apps and bot framework how can it help me?
+    - Are you a bot?
+    - Are you a human or a bot?
+    - How does this work?
+    - I guess you're real
+    - I suppose you're real
+    - I think you are real
+    - I wanted to understand what exactly this is?
+    - Is this a human?
+    - What do you do?
+    - What is your purpose
+    - about you
+    - about yourself
+    - are you a bot
+    - are you a chatbot
+    - are you a chatbot or human?
+    - are you a chatbot?
+    - are you a program
+    - are you a real human
+    - are you a real human?
+    - are you a real person?
+    - are you a robot?
+    - are you human?
+    - are you just a bot
+    - bot or human?
+    - can you explain this to me?
+    - can you understand
+    - define what you do
+    - describe what you do
+    - do you have a hobby?
+    - glad you're real
+    - help me?
+    - how can it help me?
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does it work
+    - how does this
+    - how is it
+    - how will this help me?
+    - how will you help me?
+    - human or bot?
+    - introduce yourself
+    - is this a bot?
+    - talk about yourself
+    - tell me about you
+    - tell me about your hobby
+    - tell me what you do
+    - tell me what you do?
+    - this is a bot?
+    - what about your hobby
+    - what are you
+    - what are your hobbies
+    - what can you do for me?
+    - what can you do?
+    - what do you do for fun?
+    - what do you know
+    - what is this
+    - what is this about?
+    - what's your hobby
+    - who are you?
+    - why are you here
+    - you are a bot
+    - you are a chatbot
+    - you are a real person
+    - you are not real
+    - you are real
+    - you are so real
+    - you are very real
+    - you're a chatbot
+    - you're a robot
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - many thanks
+    - thank youu
+    - awesome thanks again
+    - omgg thank youu
+
+- intent: mh_causes
+  examples: |
+    - what are the causes of mental illness?
+    - list causes of mental illness issues
+    - causes of mental illness
+    - what is the reason for having any mental illnesses?
+    - why do people have any issues like this anyway?
+
+- intent: mental_illness_signs
+  examples: |
+    - What are some of the warning signs of mental illness?
+    - Any signs of mental illness?
+    - how do i identify a mental illness or disorder
+    - how to understand if one has mental illness issues?
+    - how to identify it?
+    - how can you spot it?
+    
+
+- intent: mental_illness_recovery
+  examples: |
+    - Can people with mental illness recover?
+    - Recovery tips for mental illness.
+    - Can I recover from mental illness?
+    - Where Can I Learn About Types Of Mental Health Treatment?
+    - I think i'm experiencing some some illness.Can i recover?
+    - What if my partner is experiencing mental illness can they recover?
+    - What if my friend is experiencing mental ilness can they recover?
+    - What if my acquaintance is experiencing mental ilness can they recover?
+    - What if my family member is experiencing mental ilness can they recover?
+    - Is there any hope for recovery?
+    
+
+- intent: mental_illness_professional
+  examples: |
+    - How can I find a mental health professional for myself or my child?
+    - What treatment options are available?
+    - What is the difference between mental health professionals?
+    - Where can I learn about types of mental health treatment
+    - What are the different types of mental health professionals?
+    - how do i find professional treatment?
+
+- intent: mental_illness_psychologist
+  examples: |
+    - How can I see a psychologist?
+    - How can I see a counsellor?
+    - Where can i find counseller for myself?
+    - where can i find counseller for someone like my family,friends,partners,acquaintances or colleague?
+    - where do i see a professional
+
+- intent: mental_illness_more
+  examples: |
+    - Where else can I get help?
+    - Where can I go to find therapy
+    - Where can I go to find a support group?
+    - Where can I learn more information about clinical trials?
+    - can i get some help?
+
+- intent: mental_illness_no_support
+  examples: |
+    - What do I do if the support doesn’t help?
+    - all this therapy is nonsense it didn't help me
+    - nothing helps me
+
+- intent: mental_illness_treatment
+  examples: |
+    - If I become involved in treatment, what do I need to know?
+    - What should I know before starting a new medication?
+    - what are the risks of treatments?
+    - tell me about the treatments
+
+- intent: mental_illness_medication_before
+  examples: |
+    - I want some medication for my anxiety where i do find some?
+    - I want some medication for my depression where do i get it?
+    - where can i get medication?
+    - what is procedure to put myself on medication
+    - what should do i do to get drugs for my treatment?
+    - can i get any medicines first?
+    
+
+- intent: mental_illness_medication_after
+  examples: |
+    - If I feel better after taking medication, does this mean I am cured and can stop taking it?
+    - i really want to stop taking medicines
+    - i'm sick of these drugs
+    - i want off these medicines
+    
+
+- intent: mental_illness_medication_payment
+  examples: |
+    - How can I get help paying for my medication?
+    - Where can I find free or low-cost counselling?
+    - How can for mental health care?
+    - any financial aid to buy medication?
+    - any financial aid for treatments?
+    - the meds are too costly i dont know if i can even afford it
+    - it too expensive i need help
+
+- intent: mental_health_cure
+  examples: |
+    - Are there cures for mental health problems?
+    - Can you prevent mental health problems?
+    - What do I do if I’m worried about my mental health?
+    - can we cure these disorders
+    - is there a cure
+
+- intent: mental_health_plan
+  examples: |
+    - Why do I need a plan?
+    - why do i prioritize my mental health?
+    - i wanna prioritize my mind
+    - i need to top my mental health
+
+- intent: mental_health_lonely
+  examples: |
+    - How can I maintain social connections? What if I feel lonely?
+    - I feel lonely?How to socialize?
+    - I feel really lonely
+    - i'm lonely
+    - i feel abandoned
+    - i am a loner
+    - i wanna socialize
+    - i want to be a social butterfly
+    - i want to be social and all like active 
+    - i feel lonely
+    - i feel alone
+
+- intent: mental_health_distraction
+  examples: |
+    - How can I use distraction to manage difficult thoughts or feelings?
+    - How do distract myself from such negative head space?
+    - how do disengage when i'm experiencing any such negativity?
+    - i want to really distract myself from all this nonsense
+    - i wanna disconnect from all this
+    - i want to feel disconnected for a while like i'm too occupied always idk why
+    - i want to feel disconnected
+
+- intent: mental_health_perspective
+  examples: |
+    - How can I reframe the situation and find more balanced perspectives?
+    - How do change my viewpoint and balance my perspectives?
+    - i want to find different vision
+    - i want to have many opinions
+    - i want to have new viewpoints 
+
+- intent: mental_health_adults
+  examples: |
+    - Where can older adults find help for mental health concerns?
+    - where i can find resources to help my grandparents or parents?
+    - i don't know how to convince my parents to understand why this health thing is important
+    - they are soo stressed all the time i want them to find their peace
+
+- intent: start_stress
+  examples: |
+    - I'm stressed about something
+    - I'm fixated about something
+    - I'm stressed
+    - stressed
+    - super stressed
+    - soo stressed
+    - I have stage fear so before every speech/presentation, my legs start shivering and body sweating.
+    - My blood pressure increases automatically during vaccination.
+    - When i watch horror movies alone, my blood pressure increases due to such environment.
+    -  I was excited to be on my first date and at the same time was stressed and nervous too.
+    - Due to 24*7 construction happening in my society, i gets agressive due to such loud noises.
+    - Due to persistently negative response to challenges, i am stressed to make up a new challenge now.
+    - I am in a traumatic stress as my friend got into a severe accident.
+    - I am stressed about my future as my responsibilities for financial are more.
+    - I recently had an argument with my colleagues/friends/family and now i am stressed about it for the whole day.
+    - I have done a crime and i so will be stressed for many days due to involvement of police and detectives.
+    - I automatically bite my nails when i am stressed.
+
+- intent: mood_anxiety
+  examples: |
+    - anxious
+    - Panic attack
+    - overthinking
+    - scared
+    - I can't concentrate
+    - Am I a failure?
+    - I feel twitching, trembling and shaky
+    - What have I accomplished?
+    - I can't sleep
+    - I feel troubled
+    - Leave me alone!
+    - i dont want to talk
+    - i feel unsatisfied
+    - indecisive
+    - I feel like someone is watching me
+    - stranger
+    - feeling tensed
+    - short of breath
+    - i can't breathe
+
+- intent: inform_anxiety_reason_education
+  examples: |
+    - I am feeling anxious because of my education.
+    - I am feeling nervous about my studies.
+    - Tests worry me a lot.
+    - I'm not able to complete my course satisfactorily.
+    - I'm unable to understand the course material.
+    - I'm uncomfortable with my professors.
+    - I think I chose the wrong degree.
+    - My course is so disappointing
+    - my college is wrecking me
+    - my college is working me up
+
+- intent: inform_anxiety_reason_peers
+  examples: |
+    - I am feeling anxious because of peer pressure.
+    - Peer pressure is making me stressed.
+    - My friends' expectations are pressuring me and it's causing anxiety.
+    - I feel a lot of pressure from my peers or colleagues.
+    - The stress from trying to fit in with my peers is overwhelming.
+    - The need to conform to my peer group is stressing me out.
+    - I'm feeling anxious due to the influence of my friends.
+    - Peer pressure is causing me a lot of anxiety.
+    - I'm stressed because I feel like I have to keep up with my friends.
+    - I am stressed due to peer pressure.
+    - i feel like i have to keep up with this fast world and i am not able to
+    - my fellows are so ahead of me
+    - i dont think i can ever catch up with my peers.
+
+- intent: inform_anxiety_reason_finances
+  examples: |
+    - I am feeling anxious because of financial issues.
+    - Financial dependence is causing me stress.
+    - I've been maxing on my credit.
+    - My loan is still due.
+    - My financial situation is making me anxious.
+    - I am stressed about money.
+    - I am worried about my expenses.
+    - The lack of money is stressing me out.
+    - I feel anxious due to financial problems.
+    - Financial stress is overwhelming me.
+    - I am anxious because I can't manage my finances.
+    - Money issues are causing me a lot of anxiety.
+    - my credits are freaking me out
+    - i am in so much debt
+    - i need money
+    - i want money so i can do anything
+    
+
+- intent: inform_anxiety_reason_family
+  examples: |  
+    - I am feeling anxious because of family problems.
+    - My family issues are making me stressed.
+    - I am anxious due to conflicts with my family.
+    - Family pressure is causing me anxiety.
+    - I feel a lot of stress because of my family.
+    - My family situation is making me anxious.
+    - Family expectations are overwhelming me.
+    - I am stressed out by family disputes.
+    - I feel anxious because of my family's expectations.
+    - My family dynamics are causing me a lot of anxiety.
+    - my family is on my nerves
+    - my family is soo annoying
+    - family issues are working me up
+    - too many family stuff
+    - we argue a lot
+
+- intent: inform_feeling_stuck
+  examples: |
+    - I am feeling stuck and can't seem to move forward.
+    - I am in a slump and can't pick myself up.
+    - I feel like I am stuck in a rut.
+    - I can't seem to get out of this slump.
+    - I feel unmotivated and stuck.
+    - I'm feeling stuck and don't know what to do.
+    - I'm in a slump and can't find the motivation to move forward.
+    - I feel like I'm not making any progress.
+    - I am stuck and can't seem to get going.
+    - I can't pick myself up from this slump.
+    - I don't see the purpose of my actions.
+    - I'm feel monotonous and deprived.
+    - I'm feel lifeless. 
+    - I feel lethargic and it's stressing me out.
+    - i feel just stuck ig
+    - i cant move on
+
+- intent: inform_feeling_academics
+  examples: |
+    - I missed deadlines and now I am anxious.
+    - My work is causing me a lot of stress.
+    - I feel anxious because of the pressure at school.
+    - The stress from exams is overwhelming me.
+    - I am anxious because of my studies.
+    - The workload from school is stressing me out.
+    - I am stressed due to academic performance pressure.
+    - I missed an important deadline and now I feel anxious.
+    - Balancing work and studies is causing me stress.
+    - i need work harder on my studies
+    - i flunked
+    - i failed a exam
+
+- intent: inform_relationship_stress
+  examples: |
+    - I am feeling anxious because of my relationship.
+    - My relationship problems are making me stressed.
+    - I am anxious due to conflicts with my partner.
+    - Relationship issues are causing me anxiety.
+    - I feel a lot of stress because of my relationship.
+    - My relationship situation is making me anxious.
+    - Relationship expectations are overwhelming me.
+    - I am stressed out by relationship disputes.
+    - I feel anxious because of my partner's expectations.
+    - My relationship dynamics are causing me a lot of anxiety.
+    - I am worried about my relationship.
+    - My relationship is causing me emotional distress.
+    - I feel heartbroken and anxious about my relationship.
+    - I'm not confident about my stance on relationships.
+    - I'm confused about attractions.
+    - I'm still upset about my ex-partner.
+    - My trauma is weighing down on my relationships.
+    - i just broke with my boyfriend/girlfriend
+    - we always keep fighting
+
+- intent: inform_friendship_stress
+  examples: |
+    - I am feeling anxious because of my friendships.
+    - My friends are making me stressed.
+    - I am anxious due to conflicts with my friends.
+    - Friendship issues are causing me anxiety.
+    - I feel a lot of stress because of my friends.
+    - I am stressed about my friendships.
+    - My friendship situation is making me anxious.
+    - Friendship expectations are overwhelming me.
+    - I am stressed out by friendship disputes.
+    - I feel anxious because of my friends' expectations.
+    - My friendship dynamics are causing me a lot of anxiety.
+    - I am worried about my friendships.
+    - My friendships are causing me emotional distress.
+    - I feel heartbroken and anxious about my friendships
+    - I can't keep with my friends.
+    - My lifestyle doesnt align with that of my friends.
+    - my friends are weirding me out
+    - my friends are annoying me
+
+- intent: confess
+  examples: |
+        - hey, can I tell you something?
+        - I want to talk about something i guess?
+        - I am feeling shy to tell this.
+        - I want to confess something.
+        - let's talk
+        - i want to talk
+    
+
+- intent: user_angry
+  examples: |
+    - I am [angry](Mood)
+    - I am feeling so [angry](Mood)
+    - I am so [annoyed](Mood)
+    - It's annoying
+    - That's aggravating
+    - I'm [furious](Mood)
+    - That is infuriating
+    - I'm very [mad](Mood)
+    - Everything vexes me
+    - I am [outraged](Mood)
+    - That is outrageous!
+    - I feel [hostile](Mood)
+    - I am very [frustrated](Mood)
+    - It is [irritating](Mood) me
+    - I feel so [offended](Mood)
+    - I am full of fury
+    - I feel very [belligerent](Mood)
+    - I [hate](Mood) doing this
+    - I have no patience today
+    - I could not control my anger
+    - I’m [annoyed](Mood)
+    - I’m super [annoyed](Mood)
+    - I’m so [mad](Mood).
+    - I'm [enraged](Mood)
+    - I’m straight up [angry](Mood).
+    - This is maddening!
+    - I'm [pissed](Mood) off
+    - I'm [pissed](Mood)
+    - You bet I'm [angry](Mood)
+    - That made me [angry](Mood)
+    - U made me [angry](Mood)
+    - I'm still [angry](Mood) about that
+    - I am absolutely [frustrated](Mood) and so mad at that scumbag
+    - I am seething with rage
+    - Infuriating. Absolutely [infuriating](Mood).
+    - I was [furious](Mood)!
+    - That idiotic person really [made me see red](Mood) with all his stupidity.
+    - So annoyed. Sometimes the dumbest of things get me so [riled up](Mood)
+    - I'm [cross](Mood)
+    - I'm [vexed](Mood)
+    - I'm gonna blow up
+    - Ill kill someone
+    - I'll kill myself
+    - I was really pissed off by her attitude.
+    - grumpy
+    - He got me spitting mad!
+    - What the hell do you want?
+    
+
+- intent: ask_lower_stress
+  examples: |
+    - What do I do if I'm too stressed?
+    - How can I lower my stress level?
+    - What are some good ways to lower stress?
+    - What are good ways to relax?
+    - What are some thing I can do to lower my stress?
+    - i want to be less stressed
+    - i want to feel calm
+
+- intent: ask_eat_healthy
+  examples: |
+    - What's considered a healthy diet?
+    - What's considered a good diet?
+    - How do I follow a healthy diet?
+    - What's an example of a healthy diet?
+    - How do I eat healthy?
+    - how to eat healthy
+
+- intent: ask_exercise
+  examples: |
+    - What's a good amount of exercise for someone in their thirties?
+    - How much exercise should I be getting?
+    - How much exercise is recommended?
+    - Is walking once a day enough exercise?
+    - How much exercise should I do every day?
+    - How many times per week should I go to gym?
+    
+- intent: ask_health_info
+  examples: |
+    - Can you tell me about health?
+    - can explain you about health?
+    - what is health?
+    - what are kinds of health?
+    - categories of health
+    - I want to know about different types of health
+    - Tell me about health types
+
+- intent: suicide
+  examples: |
+    - I want to kill myself.
+    - I've thought about killing myself.
+    - I want to die.
+    - I am going to kill myself.
+    - I am going to commit suicide.
+    - i am so traumatized i want to kill myself
+    - i going to hang myself
+    - i've decided to take poison
+
+- intent: user-advice
+  examples: |
+    - I want some advice.
+    - I need some advice.
+    - I need advice on something.
+    - guide me
+    - can you give me advice
+    - can you offer any advice
+    - give me some advice about
+    - give me some good advice
+    - help me with advice
+    - I could use some advice
+    - I need an advice from you
+    - I seek your advice
+    - what can you recommend
+    - what can you do
+    - what do you suggest
+    - what is your advice
+
+- intent: sleep
+  examples: |
+    - I have insomnia.
+    - I am suffering from insomnia.
+    - I can't sleep.
+    - I haven't slept for the last few days.
+    - I can't seem to go to sleep.
+    - I haven't had proper sleep for the past few days.
+    - i haven't slept properly in so long
+
+- intent: antisoc
+  examples: |
+    - I hate going to parties because there are so many people.
+    - I get really anxious in crowded places like malls or concerts.
+    - I try to avoid large social gatherings because they make me uncomfortable.
+    - I feel like I'm suffocating when I'm in a big crowd.
+    - I don't want to talk other than my close friends.
+    - I feel very uncomfortable when surrounded by lot of people
+    - I want to be alone
+    - I don't want to anywhere
+    - i don't want to talk with anyone
+
+- intent: worthless
+  examples: |
+    - I feel so worthless
+    - No one likes me
+    - I can't do anything
+    - I am so useless
+    - Nothing makes sense anymore
+    - I feel worthless and like I can't do anything right.
+    - Sometimes I wonder what the point of everything is. I feel worthless.
+    - I'm struggling with my self-worth and feeling like I'm not good enough.
+    - I feel like I'm a burden to everyone and that makes me feel worthless.
+    - I can't seem to shake this feeling of worthlessness and it's really getting me down.
+    - I feel like I don't contribute anything meaningful and that makes me feel worthless.
+    - No matter what I do, I can't seem to feel like I'm worth anything.
+    - I feel like a failure and that makes me feel worthless.
+
+- intent: depr_sym
+  examples: |
+    - I feel really sad all the time.
+    - I'm struggling to find joy in things I used to enjoy.
+    - I'm having trouble sleeping and I'm always tired.
+    - I don't feel like I can talk to anyone about how I'm feeling.
+    - I'm having thoughts of self-harm.
+    - I can't concentrate in my work or anything else
+    - I am very hopelessness about the future
+    - I am very feeling very tired or low in energy.
+    - I don't want to eat
+    - feelings of excessive guilt or low self-worth
+- intent: depr_info
+  examples: |
+    - What are the symptoms of depression?
+    - How can I tell if I have depression?
+    - What are the physical symptoms of depression?
+    - Can you tell me more about depression symptoms?
+    - Can you suggest some ways to deal with depression?
+    - What are the common causes of depression?
+    - I think, i have an  attack.
+
+- intent: depressed
+  examples: |
+    - I can't take it anymore
+    - I am so depressed
+    - I think i'm depressed.
+    - I have depression
+
+- intent: depr_treat
+  examples: |
+    - How is depression typically treated?
+    - What are some ways to manage symptoms of depression?
+    - where can I find the treatment for depression?
+    - Are there available online resources to cure depression?
+
+- intent: emotion
+  examples: |
+    - I dont know what i am feeling
+    - my emotions are wavering
+    - I want to know more about myself
+    - I want to recover
+    - i want to take control of myself
+    - i am feeling really anxious and stressed
+    - I just don't see the point in anything anymore.
+    - I'm so tired all the time.
+    - I feel like a burden to everyone around me.
+    - Nothing brings me joy anymore.
+    - I can't concentrate on anything.
+    - I'm worthless and nobody cares about me.
+    - I just want to be left alone.
+    - I can't handle all of this pressure.
+    - There's just too much going on right now.
+    - I feel like I'm drowning in responsibilities.
+    - I'm so overwhelmed and I don't know what to do.
+    - I feel like I'm on edge all the time.
+    - I can't catch my breath.
+    - My heart is racing and I feel like I'm going to pass out.
+    - I'm sweating and shaking.
+    - I feel like I'm going to die.
+    - I need to leave this situation right now.
+    - I can't stop these racing thoughts.
+    - I feel like I'm constantly failing.
+    - I just want to sleep all day.
+    - I don't see the point in anything.
+    - I feel like I'm in a dark hole that I can't get out of.
+    - I feel so alone, even when I'm around other people.
+    - I'm not worth anyone's time or attention.
+    - I'm just so tired of everything.
+    - I don't want to burden anyone with my problems.
+
+- intent: physical_abuse
+  examples: |
+    - I've been physically hurt by someone.
+    - Someone hit me and I'm scared.
+    - I am experiencing physical abuse.
+    - I'm being physically abused.
+    - I was slapped and now I feel unsafe.
+    - Someone punched me and it hurts.
+    - My partner is hurting me physically.
+    - I got bruises from being hit.
+    - I'm being beaten up.
+    - I feel scared because someone is hurting me physically.
+    - i was mugged and got beaten up badly it hurts
+    - i have become a punching bag
+    - domestic violence
+
+- intent: mental_abuse
+  examples: |
+    - I'm being emotionally manipulated.
+    - Someone is constantly putting me down and it hurts.
+    - I am experiencing mental abuse.
+    - I feel mentally tortured by someone.
+    - I'm being verbally abused.
+    - I feel worthless because of how I'm treated.
+    - My partner is always belittling me.
+    - I'm constantly being criticized and it hurts.
+    - I feel like I'm walking on eggshells around them.
+    - I'm mentally exhausted from the abuse.
+    - gaslighting
+    - toxic thinking
+    - he/she is manipulating me
+
+- intent: sexual_abuse
+  examples: |
+    - I have been sexually assaulted.
+    - Someone touched me inappropriately.
+    - I am experiencing sexual abuse.
+    - I'm a victim of sexual abuse.
+    - I was forced into sexual activity against my will.
+    - Someone harassed me sexually.
+    - I feel violated because of sexual abuse.
+    - Someone abused me sexually and I feel scared.
+    - I was molested.
+    - I need help after being sexually abused.
+    
+- intent: social_media_parasocial
+  examples: |
+    - I feel like I'm friends with influencers I follow.
+    - I have a strong connection with a YouTuber I watch every day.
+    - I think I'm in a one-sided relationship with an Instagram celebrity.
+    - I feel like I know the influencers personally.
+    - I'm emotionally attached to a Twitch streamer.
+    
+
+- intent: body_dysmorphia
+  examples: |
+    - I hate the way my body looks.
+    - I can't stop obsessing over my physical flaws.
+    - I think my nose is too big.
+    - My skin is not clear
+    - i have a lot of acne
+    - i'm considering augmentaions or rhinoplasty or cosmetic surgery.
+    - I feel like everyone is judging my appearance.
+    - I'm constantly comparing my body to others.
+
+- intent: being_toxic
+  examples: |
+    - I can't stop being rude online.
+    - I'm always negative in the comments section.
+    - I troll people for fun.
+    - I think I create offensive content.
+    - I don't care about others' feelings when I'm online.
+
+- intent: negative_emotions
+  examples: |
+    - I feel sad and hopeless all the time.
+    - I'm always anxious and stressed.
+    - I can't seem to find joy in anything.
+    - I'm constantly angry and irritable.
+    - I feel overwhelmed by negative thoughts.
+    
+- intent: insomnia_phones
+  examples: |
+      - I can't sleep because I use my phone too much
+      - My phone keeps me awake at night
+      - I have insomnia due to phone usage
+      - Using my phone late at night affects my sleep
+
+- intent: insomnia_diet
+  examples: |
+      - I can't sleep because of my diet
+      - My eating habits are affecting my sleep
+      - I have insomnia due to bad diet
+      - Eating late at night keeps me awake
+
+- intent: insomnia_stress
+  examples: |
+    - I can't sleep because of stress
+    - My stress levels are too high to sleep
+    - I have insomnia due to stress
+    - Stress is affecting my sleep
+
+- intent: insomnia_environment
+  examples: |
+      - I can't sleep because of my noisy environment
+      - My household environment is affecting my sleep
+      - I have insomnia due to my accommodation
+      - The environment in my house keeps me awake
+      - I can't sleep because my dorm is too noisy
+      - My dorm mates are loud, and it's affecting my sleep
+      - Living in a nomadic setup makes it hard to get a good night's sleep
+      - I have insomnia because my residence is uncomfortable
+      - My home environment is too noisy for me to sleep
+      - I struggle with insomnia due to my living conditions
+      - The noise in my house keeps me awake at night
+      - My nomadic lifestyle is affecting my sleep patterns
+      - It's hard to sleep with all the noise in my dorm
+
+- intent: student_issue_time_management
+  examples: |
+    - How do I manage my time better?
+    - I need help with time management for my studies.
+    - I'm struggling to balance my schedule.
+
+- intent: student_issue_low_motivation
+  examples: |
+    - I have no motivation to study.
+    - How can I stay motivated as a student?
+    - I'm feeling unmotivated with my coursework.
+
+- intent: student_issue_lack_of_concentration
+  examples: |
+    - I can't concentrate on my studies.
+    - How do I improve my focus?
+    - I'm easily distracted when studying.
+
+- intent: student_issue_distractions
+  examples: |
+    - There are too many distractions when I study.
+    - How do I deal with distractions?
+    - I get distracted easily while studying.
+
+- intent: student_issue_homesickness
+  examples: |
+    - I'm feeling homesick.
+    - How do I deal with homesickness?
+    - I miss home and it's affecting my studies.
+
+- intent: student_issue_depression
+  examples: |
+    - I'm feeling depressed.
+    - How can I deal with depression?
+    - Depression is affecting my studies.
+
+- intent: student_issue_major
+  examples: |
+    - I'm having trouble choosing a major.
+    - How do I decide on a major?
+    - I can't decide what to major in.
+
+- intent: student_issue_financial
+  examples: |
+    - I'm having financial problems.
+    - How do I manage my finances as a student?
+    - I'm worried about my finances.
+
+- intent: student_issue_resources
+  examples: |
+    - I don't have the right resources for my studies.
+    - How do I find resources for my studies?
+    - I'm lacking the necessary resources for my coursework.
+
+- intent: student_issue_sleep
+  examples: |
+    - I'm not getting enough sleep.
+    - How can I improve my sleep?
+    - Lack of sleep is affecting my studies.
+
+- intent: student_issue_partying
+  examples: |
+    - I'm partying too much.
+    - How do I balance partying and studying?
+    - Too much partying is affecting my grades.
+
+- intent: student_issue_procrastination
+  examples: |
+    - I'm procrastinating a lot.
+    - How do I stop procrastinating?
+    - Procrastination is affecting my studies.
+
+- intent: student_issue_memory
+  examples: |
+    - I have trouble remembering facts.
+    - How do I improve my memory?
+    - I'm struggling with memorization.
+
+- intent: student_issue_interest
+  examples: |
+    - I'm not interested in my coursework.
+    - How do I develop interest in my studies?
+    - Lack of interest is affecting my grades.
+
+- intent: student_issue_organization
+  examples: |
+    - I'm not organized.
+    - How do I organize my study materials?
+    - I need help organizing my stuff.
+
+- intent: student_issue_test_anxiety
+  examples: |
+    - I have test anxiety.
+    - How do I deal with test anxiety?
+    - Test anxiety is affecting my performance.
+
+- intent: student_issue_technology
+  examples: |
+    - I'm having problems with technology.
+    - How do I manage technology issues?
+    - Technology is disrupting my studies.
+
+- intent: student_issue_loneliness
+  examples: |
+    - I'm feeling lonely.
+    - How do I deal with loneliness?
+    - Loneliness is affecting my studies.
+
+- intent: substance_abuse_drugs
+  examples: |
+      - I'm addicted to molly
+      - How can I overcome cocaine addiction?
+      - Help, I'm struggling with heroin abuse
+      - Ways to quit ecstasy
+      - What are the dangers of using LSD?
+      - How can I find help for my drug addiction?
+      - I need assistance with overcoming substance abuse
+
+- intent: substance_abuse_smoking
+  examples: |
+      - I can't quit smoking cigarettes
+      - How to stop vaping?
+      - Help me quit e-cigarettes
+      - Tips for giving up smoking
+      - Where can I find support for nicotine addiction?
+      - I need help with my tobacco addiction
+
+- intent: substance_abuse_alcohol
+  examples: |
+      - I have a problem with alcohol
+      - How to quit drinking beer?
+      - Tips for overcoming alcohol addiction
+      - I need assistance with my alcohol abuse
+      - Where can I find help for alcoholism?
+      - How to stop binge drinking?
+
+- intent: understanding
+  examples: |
+    - You don't understand me.
+    - You're just some robot. How would you know?
+    - You can't possibly know what i'm going through
+    - You're useless
+    - You can't help me
+    - Nobody understands me.
+
+- intent: done
+  examples: |
+    - That's all.
+    - I don't have anything more to say
+    - Nothing else
+    - That's all i have to say
+    - no, that would be all
+- intent: privacy
+  examples: |
+    - Will my info be leaked
+    - will u share it with others
+    - what about my privacy
+    - privacy concerns
+    - u record my conversations
+    - disclose my chats
+- intent: wrong
+  examples: |
+    - What are you saying?
+    - That doesn't make sense
+    - Wrong response
+    - Wrong answer
+- intent: scared
+  examples: |
+    - I'm scared.
+    - That sounds awful. What do I do?
+    - No, I don't want to feel this way.
+    - I am scared for myself.
+- intent: stupid
+  examples: |
+    - Are you stupid?
+    - You're crazy
+    - You are dumb
+    - Are you dumb?
+- intent: no_response
+  examples: |
+    - i don't want to talk
+    - nopeeeee
+- intent: not_talking
+  examples: |
+    - I don't want to disuss it.
+    - No just stay away.
+    - I can't bring myself to open up.
+    - Just shut up
+    - stop it
+    - its enough
+    - shut up
+    - go to hell
+- intent: hate-you
+  examples: |
+    - I hate you.
+    - I don't like you.
+    - I don't trust you.
+    - fuck off
+- intent: family_history
+  examples: |
+    - My dad has struggled with depression and I'm worried that I might also be at risk.
+    - My grandmother had Alzheimer's and I'm concerned that I might be more likely to develop it too.
+    - There is a history of mental illness in my family and I'm worried that I might be affected too.
+    - My family has a history of high blood pressure and I'm concerned that I might have it too.
+    - my parents have diabetes/thyroid i'm nervous about having the same.
+- intent: log_gratitude
+  examples: |
+      - I am grateful for the beautiful sunrise this morning.
+      - Today, I am thankful for my health.
+      - I feel grateful for the support of my friends and family.
+- intent: tell_joke
+  examples: |
+          - I am bored , can you laugh me
+          - can you tell me a joke
+          - tell a joke
+          - joke
+
+- intent: morning
+  examples: |
+    - goodmorning
+    - good morning
+- intent: afternoon
+  examples: |
+    - Good Afternoon
+    - good afternoon
+- intent: night
+  examples: |
+    - good night
+    - Goodnight
+    - goodnight
+- intent: mood_disgust
+  examples: |
+    - disgust
+    - disgusting
+    - disgusted
+    - Disgust
+    - She shook her hed in disgust
+    - the idea of eating raw meat digusts him
+    - I loathe you
+    - repugnance
+    - disgusted by thier ignorance
+    - to cause disgust
+    - all ths blood is making me feel nauseous
+    - what is with all this repulsive behaiviour?
+    - his behaviour grosses me out
+    - he tried to touch me and it turned me off
+    - the way he tried to feel me, made me nauseated
+    - Piniella disagreed and threw her hat in disgust
+    - his way was very unpleasant
+    - you make me feel very annoyed and sick
+    - sickening
+    - feel bad
+    - repulsive
+    - Repulsive
+    - distasteful
+    - Distasteful
+    - Repugnance
+    - his disgust at the media has been covering the story
+    - the idea of meeting raw meat disgust him
+    - the incident left her feeling disgusted by herself
+    - they felt nothing but repugnance for the group's violent history
+    - a strong feeling of dislike or disgust
+- intent: road_accident
+  examples: |
+    - I just smashed my car
+    - hit a car
+    - i had a road accident
+    - i just crashed into someone
+    - stop the car! you nearly hit me
+    - are you blind? Can't you drive properly
+    - how the hell did you even get a liscense?
+    - can you even pay for this?
+    - why didn't you stop when I honked?
+    - i tried to brake but the car didn't stop
+    - you hit my car
+    - the car hit a pole
+    - driving rashly ended up in my car crashing into a truck
+    - the bus fell from the bridge
+    - the car crashed out of the highway
+    - her car crashed in a building
+    - you destroyed my car
+    - what the hell happened to my ride
+    - you were driving like a madman that's why you hit me
+    - I had a car accident
+
+- intent: smart
+  examples: |
+    - you are so intelligent
+    - you are a genius
+    - smart
+    - brilliant
+    - clever
+    - you are clever
+    - you are so brainy
+    - you're really smart
+    - you're really brainy
+    - you know a lot
+    - you know a lot of things
+    - you have a lot of knowledge
+    - you know so much
+    - how smart you are
+    - how brainy you are
+    - how clever you are
+    - how brilliant you are
+    - you are intelligent
+    - you are qualified
+    - you are really smart
+    - you're very smart
+    - you are so smart
+    - you are too smart
+    - you are very clever
+    - you are very intelligent
+    - you are very smart
+    - you're intelligent
+    - you're a genius
+    - you're a smart cookie
+    - you're clever
+    - you're pretty smart
+    - you're qualified
+    - why are you so smart
+    - you are so clever
+    - can you get smarter
+    - study
+    - you should study better
+    - you must learn
+    - be clever
+    - be more clever
+    - be smarter
+    - be smart
+    - get qualified
+
+- intent: funny
+  examples: |
+    - you make me laugh a lot
+    - you are hilarious
+    - you are really funny
+    - you're the funniest bot I've talked to
+    - you make me laugh
+    - you're so funny
+    - you're a very funny bot
+    - you're really funny
+    - how funny you are
+    - you're incredibly funny
+    - you are funny
+    - you're the funniest
+    - you are so funny
+    - you are very funny
+    - that was funny
+- intent: workplace_problems
+  examples: |
+      - I hate dealing with toxic people at my workplace.
+      - My coworkers are always gossiping and spreading negativity.
+      - Dealing with office politics is stressing me out.
+      - my colleagues are very gossipy
+
+- intent: career_pressure_problems
+  examples: |
+      - The promotion I am working hard to get is not coming.
+      - Why are the positions I am qualified for being offered to others?
+      - Most of my colleagues seem to be moving ahead of me in their careers.
+
+- intent: unfair_treatment_problems
+  examples: |
+      - I am unfairly treated in my surrounding.
+      - My colleagues are treating me unfairly.
+      - Some authorities are treating me differently, and that is not fair.
+      - my colleagues are very biased.
+      - my boss is soo unjust like ahhh
+      - my colleagues hate me
+
+- intent: identify_dyslexia
+  examples: |
+    - How to identify dyslexia?
+    - Signs of dyslexia
+    - What are the symptoms of dyslexia?
+    - How can I tell if I have dyslexia?
+    - Am I dyslexic?
+
+- intent: dyslexia_remedies
+  examples: |
+    - Remedies for dyslexia
+    - How to cope with dyslexia?
+    - Treatment options for dyslexia
+    - Strategies to manage dyslexia
+    - How can I improve my reading with dyslexia?
+
+- intent: identify_eating_disorders
+  examples: |
+    - Signs of eating disorders
+    - How to recognize an eating disorder?
+    - What are the symptoms of eating disorders?
+    - Am I suffering from an eating disorder?
+    - How can I identify bulimia/anorexia/binge-eating disorder?
+
+- intent: eating_disorders_resources
+  examples: |
+    - Where to find help for eating disorders?
+    - Resources for eating disorder treatment
+    - Support for those with eating disorders
+    - How can I get help for my eating disorder?
+    - Are there any support groups for eating disorders?
+
+- intent: bipolar_disorder
+  examples: |
+    - What are the signs of bipolar disorder?
+    - How to recognize bipolar disorder?
+    - Symptoms of bipolar disorder
+    - Do I have bipolar disorder?
+    - Signs of manic depression
+    - Am I experiencing mood swings?
+    - Signs of bipolar disorder in adults/children
+    - Treatment options for bipolar disorder
+    - How to manage bipolar disorder?
+    - Coping strategies for bipolar disorder
+    - Medications for bipolar disorder
+    - Therapy for bipolar disorder
+    - Extreme mood swings ranging from depressive lows to manic highs, with periods of normal mood in between.
+
+- intent: ocd
+  examples: |
+    - How to identify OCD?
+    - Signs of obsessive-compulsive disorder
+    - Do I have OCD?
+    - Symptoms of OCD
+    - Obsessive thoughts and compulsive behaviors
+    - Treatment options for OCD
+    - How to treat OCD?
+    - Therapy options for OCD
+    - Medications for OCD
+    - Coping with OCD
+    - Managing obsessive-compulsive disorder
+    - persistent thoughts that make me go mad of frustration
+    - i find i difficult to not notice unhygienic or chaotic arrangement. 
+
+- intent: ptsd
+  examples: |
+    - What are the signs of PTSD?
+    - Symptoms of post-traumatic stress disorder
+    - Do I have PTSD?
+    - Recognizing PTSD symptoms
+    - PTSD treatment options
+    - How to cope with PTSD?
+    - Therapy for PTSD
+    - Medications for PTSD
+    - Flashbacks, nightmares, severe anxiety, and uncontrollable thoughts about a traumatic event
+
+- intent: schizophrenia
+  examples: |
+    - Signs of schizophrenia
+    - Symptoms of schizophrenia
+    - Recognizing schizophrenia
+    - Do I have schizophrenia?
+    - Treating schizophrenia
+    - Medications for schizophrenia
+    - Therapy options for schizophrenia
+    - Coping with schizophrenia
+    -  Hallucinations, delusions, disorganized speech or behavior, and social withdrawal.
+
+- intent: dementia
+  examples: |
+    - Signs of dementia
+    - Symptoms of dementia
+    - Recognizing dementia
+    - Do I have dementia?
+    - Treating dementia
+    - Medications for dementia
+    - Therapy options for dementia
+    - Coping with dementia
+    - Memory loss, confusion about time or place, difficulty completing familiar tasks, and changes in mood or personality.
+
+- intent: autism
+  examples: |
+    - Signs of autism
+    - Symptoms of autism
+    - Recognizing autism
+    - Do I have autism?
+    - Treating autism
+    - Therapy options for autism
+    - Coping with autism
+    - Support for autism
+    - i see a lot of repetitive behaviors,is that a sign of autism?
+    - intense interest in specific topics
+
+- intent: developer
+  examples: |
+    - Who are you
+    - What are you?
+    - Who you are?
+    - Tell me more about yourself
+    - What is your name?
+    - What should I call you?
+    - What's your name?
+    - Tell me about yourself
+
+- intent: user_acknowledgement
+  examples: |
+      - ok
+      - okay
+      - sure
+      - got it
+      - understood
+      - alright
+      - fine
+      - yess
+      - yep
+      - yup
+      - mhm
+      - right
+      - okie
+      - okay then
+      - all good
+      - cool
+
+- intent: ask_self_care_practices
+  examples: |
+      - What are some good self-care practices?
+      - How can I practice self-care?
+      - Tips for self-care
+      - Can you suggest some self-care activities?
+      - What are some ways to take care of myself?
+
+- intent: ask_mental_wellbeing_practices
+  examples: |
+      - How can I improve my mental well-being?
+      - What are some practices for mental well-being?
+      - Tips for mental health
+      - How to take care of mental health?
+      - Mental well-being tips
+
+- intent: ask_healthy_eating_tips
+  examples: |
+      - Can you give me tips for healthy eating?
+      - How can I eat healthier?
+      - What are some healthy eating habits?
+      - Suggestions for a healthy diet
+      - Healthy eating tips
+      - i want to eat healthy how do i get started on that?
+      - i want to eat healthy?
+
+- intent: ask_mindfulness_meditation
+  examples: |
+      - How can I practice mindfulness?
+      - Tips for meditation
+      - What are the benefits of mindfulness meditation?
+      - How to meditate?
+      - Mindfulness exercises
+      - can you talk about yoga?
+
+- intent: ask_hydration_importance
+  examples: |
+      - Why is staying hydrated important?
+      - Benefits of drinking water
+      - How much water should I drink daily?
+      - Importance of hydration
+      - Tips for staying hydrated
+      - i am so dehydrated
+      - i barely drink water
+
+- intent: ask_journaling_benefits
+  examples: |
+      - What are the benefits of journaling?
+      - How can journaling help mental health?
+      - Why should I keep a journal?
+      - Tips for journaling
+      - Benefits of writing a diary
+      - i want to start journalling as an outlet to my emotions
+
+- intent: ask_time_in_nature
+  examples: |
+      - What are the benefits of spending time in nature?
+      - How can nature improve mental health?
+      - Why is it important to spend time outside?
+      - Tips for enjoying nature
+      - Nature and mental well-being
+      - it too stuffy at home i want to explore outside
+      - i want to experience open air
+
+- intent: ask_creative_activities
+  examples: |
+      - How can creative activities help mental health?
+      - What are some good creative activities?
+      - Benefits of engaging in creative activities
+      - Tips for creative expression
+      - How to be more creative?
+      - i want to be in touch with my creative side?
+
+- intent: ask_social_connections
+  examples: |
+      - Why are social connections important?
+      - Benefits of maintaining relationships
+      - How can I improve my social life?
+      - Tips for staying connected with others
+      - Importance of social connections
+      - can turn into social butterfly
+
+- intent: ask_personal_boundaries
+  examples: |
+      - How can I set personal boundaries?
+      - Importance of setting boundaries
+      - Tips for maintaining personal boundaries
+      - How to say no
+      - Why are boundaries important?
+
+- intent: ask_therapy_counseling
+  examples: |
+      - Should I seek therapy?
+      - How can counseling help me?
+      - Benefits of seeing a therapist
+      - Tips for finding a good therapist
+      - How to start therapy?
+
+- intent: ask_relaxation_techniques
+  examples: |
+      - What are some good relaxation techniques?
+      - How can I relax more?
+      - Tips for relaxation
+      - Relaxation exercises
+      - Ways to reduce stress
+
+- intent: ask_gratitude_practice
+  examples: |
+      - How can I practice gratitude?
+      - Benefits of keeping a gratitude journal
+      - Why is gratitude important?
+      - Tips for gratitude practice
+      - How to be more grateful?
+
+- intent: ask_positive_affirmations
+  examples: |
+      - How can positive affirmations help me?
+      - Tips for using affirmations
+      - Benefits of positive affirmations
+      - What are some good affirmations?
+      - How to practice affirmations?
+      - what is affirmations or manifestations?
+
+- intent: ask_mbsr
+  examples: |
+      - What is Mindfulness-Based Stress Reduction?
+      - Benefits of MBSR
+      - How to practice MBSR?
+      - Tips for Mindfulness-Based Stress Reduction
+      - MBSR programs
+
+- intent: ask_screen_time
+  examples: |
+      - How can I reduce my screen time?
+      - Tips for managing screen time
+      - Why is too much screen time bad?
+      - Benefits of limiting screen time
+      - How to set screen time boundaries?
+      - i am always on my phone and now i want to reduce screen time to be productive what do i do?
+      - i binge-watch too much
+
+- intent: ask_self_compassion
+  examples: |
+      - What is self-compassion?
+      - How can I practice self-compassion?
+      - Benefits of being self-compassionate
+      - Tips for self-compassion
+      - How to be kinder to myself?
+      - how i learn to develop self esteem
+      - why do i need to be self-compassionate?
+      - how can i love myself?
+
+- intent: ask_volunteer_work
+  examples: |
+      - How can volunteering help my mental health?
+      - Benefits of doing volunteer work
+      - Tips for finding volunteer opportunities
+      - Why should I volunteer?
+      - Volunteering and well-being
+
+- intent: ask_routine_structure
+  examples: |
+      - Why is having a routine important?
+      - Tips for creating a daily routine
+      - Benefits of a structured day
+      - How to maintain a routine?
+      - Importance of daily structure
+      - do i need to have a disciplined routine because it feels more like a punishment:(
+
+- intent: ask_support_groups
+  examples: |
+      - How can support groups help me?
+      - Benefits of joining a support group
+      - Tips for finding support groups
+      - Why are support groups important?
+      - Types of support groups
+
+- intent: user_confused
+  examples: |
+    - I'm confused
+    - This is confusing
+    - I don't understand
+    - Can you explain that again?
+    - I'm not sure what you mean
+    - What do you mean?
+    - This is unclear
+    - I'm having trouble following
+    - I'm a bit lost
+
+- intent: surprise
+  examples: |
+      - I can't believe it!
+      - Wow, that's unexpected!
+      - What a surprise!
+      - I'm shocked!
+      - That caught me off guard!
+      - I never saw that coming!
+      - Incredible!
+      - Unbelievable!
+      - damnnn
+      - thats's crazy
+
+- intent: love
+  examples: |
+      - I love you!
+      - You mean everything to me!
+      - You're my sunshine!
+      - You make my heart skip a beat!
+      - I adore you!
+      - i am so in awe of him/her.
+      - You're the love of my life!
+      - I'm head over heels for you!
+      - You complete me!
+      - te amo
+      - je t'aime
+    
+
+- intent: envy
+  examples: |
+      - I wish I had what you have.
+      - You're so lucky.
+      - Why does everything come so easy for you?
+      - I'm jealous of your success.
+      - I envy your talent.
+      - You have everything I want.
+      - I wish I could be as [successful/rich/popular] as you.
+      - You're living the dream!
+      - woahh i am so fucking jealous now!
+
+- intent: guilt
+  examples: |
+      - I feel terrible about what I did.
+      - I can't forgive myself.
+      - I'm sorry for hurting you.
+      - I regret my actions.
+      - It's all my fault.
+      - I should have known better.
+      - I feel so guilty.
+      - I can't shake this feeling of remorse.
+      - the guilt is killing me
+
+- intent: shame
+  examples: |
+      - I'm so embarrassed.
+      - I feel ashamed of myself.
+      - I can't face anyone after what I did.
+      - I wish I could disappear.
+      - I'm such a disappointment.
+      - I'm unworthy of love.
+      - I can't look myself in the mirror.
+      - I'm drowning in shame.
+
+- intent: read_poem
+  examples: |
+    - Can you read me a poem?
+    - I'd like to hear a poem.
+    - Please recite a poem.
+    - Can you share a poem with me?
+    - Read me something poetic.
+
+- intent: tell_story
+  examples: |
+    - Can you tell me a story?
+    - I'm in the mood for a story.
+    - Share a story with me, please.
+    - Tell me a tale.
+    - I'd love to hear a story.
+
+- intent: recommend_mental_wellbeing_books
+  examples: |
+    - Can you recommend books for mental wellbeing?
+    - Any good books on mental health?
+    - I'm looking for books to improve my mental health.
+    - What are some recommended reads for mental wellbeing?
+    - Can you suggest books for self-help and mental wellness?
+
+- intent: recommend_regular_books
+  examples: |
+        - Do you have any book recommendations?
+        - I'm looking for a good book to read.
+        - Can you suggest a book for me?
+        - What's a great book I should check out?
+        - Any recommendations for a good read?
+
+
+      

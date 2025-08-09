@@ -1,0 +1,28 @@
+{
+  "lookup": {
+    "eJyLrq6NBQAEOAGx": "action_listen",
+    "eJwtisEJwCAMAFfJAJ3AVUoJInkEYiyJCkXcvYH2c9zBnWsfsG6jibl0bppgfYKaKyX4Q9g7abzDyeJhjewJajALsoiSOxqVNsmeva8XHuMjFg==": "utter_recovery",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohF0gm5sRn5uTkpRYXxxelJueXpRZV1hIwtbSkJLUIoZp4Y2MBwTRFEQ==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxL7u4tjYWAAX3G/c=": "utter_thanks",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEqhJCMxL7u4loAhpSUlqUXxULU4zYgFAOnXNe0=": "action_listen",
+    "eJwti9EJwDAIRFdxgE6QVUoRKRYEY4Km/QnZvUL7c3cP3u1zbTC784N0DmlWYH4DjSoX+EElBlu6d7CnI5Y4CtRMUhRV4wjs3q7sfJCudbyvMyS8": "utter_mental_illness_professional",
+    "eJyVTcsJgDAMXSUDOEFXEQlFIhTStDSpl9LdDehZ8fI+8D7rmAuM2ujEuFsqEmDcAiVmCvAYTmoknu1KzTNJ3FqA7BgZE7OQKtZWDmdvRJ4fy92MGr4N/HvbLr6ZUDw=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taS2NhYA6dwbhQ==": "utter_greet",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpbhMiAUAQvc0lw==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KfGleRmJBQWVtbWxAN75UWc=": "utter_cheer_up",
+    "eJydjlEKgCAQRK/iATqBV4lYxJYUchVdgxDv3oL9G/0MM/B4zNr6olrKeIGx7CNp1UYBMgG1esfpCyMJWwtmYTzJZK2OjMh94qjMmGGg/wyTFyHGHSo5k9L97Yx1KFnTzLU9XiFuqQ==": "utter_did_that_help",
+    "eJytjlEKgCAQRK/iATqBV4lYRIcUahVbg5DunlD/RvQzzMDjMWM9B1VTxk7GSoisVb0LsVmh1TOWsAm4sWVDbkzgNkWrOQNydhxFBJlu9Juh82KN0VFhb1I63p2xHi1L+sPlgiPxRshj6QqnC1EGjek=": "action_listen",
+    "eJytj9EJwzAMRFfxAJ3Aq4QgRKzUglg2ilwoxrvXkP67tP0Rd/B4nJbWb64VpQfgZpzFu3YFEEzk3bscfBrJYOtJOhiWUc27uxJZnziqGSlc6HeGyYqUc4AqEUt5fjZmizRuLf9wBQ5gEQ0iHT8KJ3/ivrOm3tcXH2yoGw==": "utter_happy",
+    "eJytj0EKAyEMRa/iAXoCr1JKCGOmBsYomVgoMnevYLfFoe0m5MPn5eXajotrRekBuBhn8a6NBQQTefcOG+9G0rt1J+0dlh7Nu7sS2TFhVDNSGNXvCBOLlHOAKhFLeZ6TWSL1Wcs/WIEDWESDSNuPwMmfuK6s6ZzVuPcRcXsBe37Blg==": "action_listen",
+    "eJwtytEJwCAMRdFVMkAncBUpQSS0gRjF2EIRd2+g/Xm8CyfOtcFsnW5MeXDVAPM7qKlQgD+EbZC6vYy6G1bPEaD4JkEWUTLDZk8+q9TD+Vr7C6+tJM8=": "utter_mental_illness_psychologist",
+    "eJyVjdEJgDAMRFfpAE7QVURCKUELMS1NKkjp7gb0W/HnuIPHu7mPyfVS8YAQNWX2rt8FOOzo3TMoiSIb2wSrMYltqne7ZSBIRIwiUOSMW6a8Gj4+zE0VK7wJ/r0tF8uIUHU=": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohNyM+OREoVlxbGwsAW0EdJg==": "utter_reasons_for_mi",
+    "eJyFjEEKgDAMBL+SB/iCfkUklBIxYFNJUi/FvxvQs952lmHmcU0wDqUTc3FukmA8AyVXSvDCzuYk4XYjDYcl0BPUDUuOz66fTncnRaVsTQzXplj5M7fcEAc7mA==": "action_listen",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KSDzE4EGxQIAPEFQdQ==": "utter_happy",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohvSg1taSWgBmlJSWpRfEQpeSZQMAVufn5KSDzE4l0SkZiQUElfmNiAVKZa5w=": "action_listen",
+    "eJytj1EKwyAQRK/iAXoCr1LCInGIQrKKWQNFvHsX7L+h7c8yA4/H7LP1h2m54CK3SkxsTRuB2B2w5lP2eApY2XqiKBNZq1izFUD6xFFFUGig3xkmK46UPFUOLufXvTFrgN6a/+Hy0ZMEJxSw/yic/OnBqlje0A2nVg==": "utter_goodbye",
+    "eJytj9EJwzAMRFfxAJ3Aq4Qg3PiIDYlsHLkQTHavIP0NDm1/hA6Op6ehHQ/TcsGL3CQxsTXtXIjdCms+YYmbgLVbNxTtRNYo1swFkKPDqCIodFa/I3Qs1pQ8VQ4u5/2ezBSgs+Z/sHz0JMEJBSw/Ajt/evBNp1mPPndcIcY3+fTA0w==": "action_listen",
+    "eJwtikEKgEAIAL/iA3qBX4kQCQnBtVi3LrJ/T6jLMAOz5lwgry4P8T70dIT8hJybIPxhGkO83juk16NeORBakY3UzCWCQg+PObcXtzYhyw==": "utter_mental_illness_signs",
+    "eJyLrq7VUaguKEoti09MLsnMz7NSqIYw4vMSc1OtFKCcnMziktQ8oNrS4tQioJrMPCC3xEohF0gm5sRn5uTkpRYXxxdnpucV1xIwsrSkJLUoHqtOIs2PBQBmcEdp": "action_listen"
+  }
+}

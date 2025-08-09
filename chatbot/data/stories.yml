@@ -1,0 +1,694 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_deny
+
+- story: Express thanks
+  steps:
+    - intent: thanks
+    - action: utter_thanks
+
+- story: causes_mh
+  steps:
+      - intent: mh_causes
+      - action: utter_reasons_for_mi
+
+- story: signs_mh
+  steps:
+      - intent: mental_illness_signs
+      - action: utter_mental_illness_signs
+
+- story: recover_mh
+  steps:
+      - intent: mental_illness_recovery
+      - action: utter_recovery
+
+- story: profess_mh
+  steps:
+      - intent: mental_illness_professional
+      - action: utter_mental_illness_professional
+
+- story: respond to mental_illness_psychologist
+  steps:
+      - intent: mental_illness_psychologist
+      - action: utter_mental_illness_psychologist
+
+- story: respond to mental_illness_more
+  steps:
+      - intent: mental_illness_more
+      - action: utter_mental_illness_more
+
+- story: respond to mental_illness_no_support
+  steps:
+      - intent: mental_illness_no_support
+      - action: utter_mental_illness_no_support
+
+- story: respond to mental_illness_treatment
+  steps:
+      - intent: mental_illness_treatment
+      - action: utter_mental_illness_treatment
+
+- story: respond to mental_illness_medication_before
+  steps:
+      - intent: mental_illness_medication_before
+      - action: utter_mental_illness_medication_before
+
+- story: respond to mental_illness_medication_after
+  steps:
+      - intent: mental_illness_medication_after
+      - action: utter_mental_illness_medication_after
+
+- story: respond to mental_illness_medication_payment
+  steps:
+      - intent: mental_illness_medication_payment
+      - action: utter_mental_illness_medication_payment
+
+- story: respond to mental_health_cure
+  steps:
+      - intent: mental_health_cure
+      - action: utter_mental_health_cure
+
+- story: respond to mental_health_plan
+  steps:
+      - intent: mental_health_plan
+      - action: utter_mental_health_plan
+
+- story: respond to mental_health_lonely
+  steps:
+      - intent: mental_health_lonely
+      - action: utter_mental_health_lonely
+
+- story: respond to mental_health_distraction
+  steps:
+      - intent: mental_health_distraction
+      - action: utter_mental_health_distraction
+
+- story: respond to mental_health_perspective
+  steps:
+      - intent: mental_health_perspective
+      - action: utter_mental_health_perspective
+
+- story: respond to mental_health_adults
+  steps:
+      - intent: mental_health_adults
+      - action: utter_mental_health_adults
+
+- story: confess_path
+  steps:
+    - intent: confess
+    - action: utter_confess
+
+- story: respond to user anx
+  steps:
+
+    - intent: mood_anxiety
+    - action: utter_nervous
+    - intent: inform_anxiety_reason_education
+    - action: utter_redu
+    - intent: inform_anxiety_reason_peers
+    - action: utter_rea_peers
+    - intent: inform_anxiety_reason_family
+    - action: utter_rfamily
+    - intent: inform_feeling_stuck
+    - action: utter_rstuck
+    - intent: inform_feeling_academics
+    - action: utter_racde
+    - intent: inform_relationship_stress
+    - action: utter_rrel
+    - intent: inform_friendship_stress
+    - action: utter_rfrnd
+    - intent: inform_anxiety_reason_finances
+    - action: utter_rfin
+
+- story: respond to user stress
+  steps:
+    - intent: start_stress
+    - action: utter_stress
+- story: denying
+  steps:
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_deny
+- story: anger
+  steps:
+  - intent: user_angry
+  - action: utter_user_angry
+
+- story: user asks about lowering stress
+  steps:
+      - intent: ask_lower_stress
+      - action: utter_ask_lower_stress
+
+- story: user asks about eating healthy
+  steps:
+      - intent: ask_eat_healthy
+      - action: utter_ask_eat_healthy
+
+- story: user asks about exercising
+  steps:
+      - intent: ask_exercise
+      - action: utter_ask_exercise
+
+- story: User asks about types of health
+  steps:
+      - intent: ask_health_info
+      - action: utter_ask_types_of_health
+
+- story: User expresses suicidal thoughts
+  steps:
+      - intent: worthless
+      - action: utter_worthless
+      - intent: suicide
+      - action: utter_suicide
+
+
+- story: user expresses depression and sleep
+  steps:
+    - intent: depressed
+    - action: utter_depressed
+    - intent: depr_sym
+    - action: utter_depr_sym
+    - intent: user-advice
+    - action: utter_advice
+    - intent: depr_info
+    - action: utter_depr_info
+    - intent: depr_treat
+    - action: utter_depr_treat
+    - intent: sleep
+    - action: utter_sleep
+
+
+- story: user expresses depression and sleep2
+  steps:
+    - intent: depressed
+    - action: utter_depressed
+    - intent: depr_sym
+    - action: utter_depr_sym
+    - intent: user-advice
+    - action: utter_advice
+    - intent: depr_info
+    - action: utter_depr_info
+    - intent: depr_treat
+    - action: utter_depr_treat
+    - intent: sleep
+    - action: utter_sleep
+
+
+#- story: emotions
+#  steps:
+#    - intent: emotion
+#    - action: action_emotion
+
+
+- story: antisocialization
+  steps:
+    - intent: antisoc
+    - action: utter_antisoc
+
+- story: Handle physical abuse
+  steps:
+      - intent: physical_abuse
+      - action: utter_physical_abuse
+
+- story: Handle mental abuse
+  steps:
+      - intent: mental_abuse
+      - action: utter_mental_abuse
+
+- story: Handle sexual abuse
+  steps:
+      - intent: sexual_abuse
+      - action: utter_sexual_abuse
+
+- story: Handle social media parasocial relations
+  steps:
+      - intent: social_media_parasocial
+      - action: utter_social_media_parasocial
+
+- story: Handle body dysmorphia
+  steps:
+      - intent: body_dysmorphia
+      - action: utter_body_dysmorphia
+
+- story: Handle being toxic
+  steps:
+      - intent: being_toxic
+      - action: utter_being_toxic
+
+- story: Handle negative emotions
+  steps:
+      - intent: negative_emotions
+      - action: utter_negative_emotions
+
+- story: Handle insomnia due to phones
+  steps:
+      - intent: insomnia_phones
+      - action: utter_insomnia_phones
+- story: Handle insomnia due to diet
+  steps:
+      - intent: insomnia_diet
+      - action: utter_insomnia_diet
+
+- story: Handle insomnia due to stress
+  steps:
+      - intent: insomnia_stress
+      - action: utter_insomnia_stress
+
+- story: Handle insomnia due to environment
+  steps:
+      - intent: insomnia_environment
+      - action: utter_insomnia_environment
+
+- story: Handle time management issues
+  steps:
+      - intent: student_issue_time_management
+      - action: utter_student_issue_time_management
+- story: Handle low motivation
+  steps:
+      - intent: student_issue_low_motivation
+      - action: utter_student_issue_low_motivation
+
+- story: Handle lack of concentration
+  steps:
+      - intent: student_issue_lack_of_concentration
+      - action: utter_student_issue_lack_of_concentration
+
+- story: Handle too many distractions
+  steps:
+      - intent: student_issue_distractions
+      - action: utter_student_issue_distractions
+
+- story: Handle homesickness
+  steps:
+      - intent: student_issue_homesickness
+      - action: utter_student_issue_homesickness
+
+- story: Handle depression among students
+  steps:
+      - intent: student_issue_depression
+      - action: utter_student_issue_depression
+
+- story: Handle choosing a major
+  steps:
+      - intent: student_issue_major
+      - action: utter_student_issue_major
+
+- story: Handle financial problems
+  steps:
+      - intent: student_issue_financial
+      - action: utter_student_issue_financial
+
+- story: Handle lack of resources
+  steps:
+      - intent: student_issue_resources
+      - action: utter_student_issue_resources
+
+- story: Handle lack of sleep
+  steps:
+      - intent: student_issue_sleep
+      - action: utter_student_issue_sleep
+
+- story: Handle too much partying
+  steps:
+      - intent: student_issue_partying
+      - action: utter_student_issue_partying
+
+- story: Handle procrastination
+  steps:
+      - intent: student_issue_procrastination
+      - action: utter_student_issue_procrastination
+
+- story: Handle remembering facts
+  steps:
+      - intent: student_issue_memory
+      - action: utter_student_issue_memory
+
+- story: Handle lack of interest
+  steps:
+      - intent: student_issue_interest
+      - action: utter_student_issue_interest
+
+- story: Handle organizing stuff
+  steps:
+      - intent: student_issue_organization
+      - action: utter_student_issue_organization
+
+- story: Handle test anxiety
+  steps:
+      - intent: student_issue_test_anxiety
+      - action: utter_student_issue_test_anxiety
+
+- story: Handle technology problems
+  steps:
+      - intent: student_issue_technology
+      - action: utter_student_issue_technology
+
+- story: Handle loneliness among students
+  steps:
+      - intent: student_issue_loneliness
+      - action: utter_student_issue_loneliness
+
+- story: Handle drug abuse
+  steps:
+      - intent: substance_abuse_drugs
+      - action: utter_substance_abuse_drugs
+
+- story: Handle smoking addiction
+  steps:
+      - intent: substance_abuse_smoking
+      - action: utter_substance_abuse_smoking
+
+- story: Handle alcoholism
+  steps:
+      - intent: substance_abuse_alcohol
+      - action: utter_substance_abuse_alcohol
+
+- story: reply to done
+  steps:
+    - intent: done
+    - action: utter_done
+
+- story: reply to priv
+  steps:
+    - intent: privacy
+    - action: utter_privacy
+
+- story: reply to scare
+  steps:
+    - intent: scared
+    - action: utter_scared
+
+- story: reply to wrong
+  steps:
+    - intent: wrong
+    - action: utter_wrong
+
+- story: reply to stuff
+  steps:
+    - intent: stupid
+    - action: utter_stupid
+    - intent: no_response
+    - action: utter_no_response
+    - intent: not_talking
+    - action: utter_not_talking
+    - intent: hate-you
+    - action: utter_hate-you
+    - intent: log_gratitude
+    - action: utter_log_gratitude
+    - intent: understanding
+    - action: utter_understanding
+
+- story: joke
+  steps:
+    - intent: tell_joke
+    - action: utter_joke
+- story: scary
+  steps:
+    - intent: scared
+    - action: utter_scared
+- story: history
+  steps:
+    - intent: family_history
+    - action: utter_history
+
+
+
+- story: sayings
+  steps:
+    - intent: morning
+    - action: utter_morning
+    - intent: afternoon
+    - action: utter_afternoon
+    - intent: night
+    - action: utter_night
+
+- story: Handle workplace problems
+  steps:
+      - intent: workplace_problems
+      - action: utter_workplace_problems
+
+- story: Handle career pressure problems
+  steps:
+      - intent: career_pressure_problems
+      - action: utter_career_pressure_problems
+
+- story: Handle unfair treatment problems
+  steps:
+      - intent: unfair_treatment_problems
+      - action: utter_unfair_treatment_problems
+
+- story: User expresses disgust
+  steps:
+      - intent: mood_disgust
+      - action: utter_express_disgust
+
+- story: User reports a road accident
+  steps:
+      - intent: road_accident
+      - action: utter_handle_road_accident
+
+- story: User praises the bot for being smart
+  steps:
+      - intent: smart
+      - action: utter_thank_for_smart_compliment
+
+- story: User appreciates the bot's humor
+  steps:
+      - intent: funny
+      - action: utter_appreciate_humor
+
+- story: Identify dyslexia
+  steps:
+      - intent: identify_dyslexia
+      - action: utter_identify_dyslexia
+
+- story: Dyslexia remedies
+  steps:
+      - intent: dyslexia_remedies
+      - action: utter_dyslexia_remedies
+
+- story: Identify eating disorders
+  steps:
+      - intent: identify_eating_disorders
+      - action: utter_identify_eating_disorders
+
+- story: Eating disorders resources
+  steps:
+      - intent: eating_disorders_resources
+      - action: utter_eating_disorders_resources
+
+- story: User asks about signs of bipolar disorder
+  steps:
+      - intent: bipolar_disorder
+      - action: utter_bipolar_disorder
+
+- story: User inquires about treatment options for OCD
+  steps:
+      - intent: ocd
+      - action: utter_ocd
+
+- story: User asks about PTSD symptoms
+  steps:
+      - intent: ptsd
+      - action: utter_ptsd
+
+- story: User asks about schizophrenia
+  steps:
+      - intent: schizophrenia
+      - action: utter_schizophrenia
+
+- story: User inquires about dementia
+  steps:
+      - intent: dementia
+      - action: utter_dementia
+
+- story: User asks about autism signs
+  steps:
+      - intent: autism
+      - action: utter_autism
+- story: User asks about dev
+  steps:
+    - intent: developer
+    - action: utter_devop
+
+- story: User says ok
+  steps:
+      - intent: user_acknowledgement
+      - action: utter_acknowledgement
+
+- story: User asks for self-care practices
+  steps:
+      - intent: ask_self_care_practices
+      - action: utter_self_care_practices
+
+- story: User asks for mental well-being practices
+  steps:
+      - intent: ask_mental_wellbeing_practices
+      - action: utter_mental_wellbeing_practices
+
+- story: User asks for healthy eating tips
+  steps:
+      - intent: ask_healthy_eating_tips
+      - action: utter_healthy_eating_tips
+
+- story: User asks for mindfulness meditation tips
+  steps:
+      - intent: ask_mindfulness_meditation
+      - action: utter_mindfulness_meditation
+
+- story: User asks for hydration importance
+  steps:
+      - intent: ask_hydration_importance
+      - action: utter_hydration_importance
+
+- story: User asks for journaling benefits
+  steps:
+      - intent: ask_journaling_benefits
+      - action: utter_journaling_benefits
+
+- story: User asks for time in nature benefits
+  steps:
+      - intent: ask_time_in_nature
+      - action: utter_time_in_nature
+
+- story: User asks for creative activities
+  steps:
+      - intent: ask_creative_activities
+      - action: utter_creative_activities
+
+- story: User asks for social connections importance
+  steps:
+      - intent: ask_social_connections
+      - action: utter_social_connections
+
+- story: User asks for personal boundaries
+  steps:
+      - intent: ask_personal_boundaries
+      - action: utter_personal_boundaries
+
+- story: User asks for therapy and counseling
+  steps:
+      - intent: ask_therapy_counseling
+      - action: utter_therapy_counseling
+
+- story: User asks for relaxation techniques
+  steps:
+      - intent: ask_relaxation_techniques
+      - action: utter_relaxation_techniques
+
+- story: User asks for gratitude practice
+  steps:
+      - intent: ask_gratitude_practice
+      - action: utter_gratitude_practice
+
+- story: User asks for positive affirmations
+  steps:
+      - intent: ask_positive_affirmations
+      - action: utter_positive_affirmations
+
+- story: User asks for MBSR
+  steps:
+      - intent: ask_mbsr
+      - action: utter_mbsr
+
+- story: User asks for screen time tips
+  steps:
+      - intent: ask_screen_time
+      - action: utter_screen_time
+
+- story: User asks for self-compassion
+  steps:
+      - intent: ask_self_compassion
+      - action: utter_self_compassion
+
+- story: User asks for volunteer work
+  steps:
+      - intent: ask_volunteer_work
+      - action: utter_volunteer_work
+
+- story: User asks for routine structure
+  steps:
+      - intent: ask_routine_structure
+      - action: utter_routine_structure
+
+- story: User asks for support groups
+  steps:
+      - intent: ask_support_groups
+      - action: utter_support_groups
+
+- story: User expresses confusion
+  steps:
+    - intent: user_confused
+    - action: utter_confused
+
+- story: User expresses surprise
+  steps:
+      - intent: surprise
+      - action: utter_handle_surprise
+
+- story: User expresses love
+  steps:
+      - intent: love
+      - action: utter_handle_love
+- story: User expresses envy
+  steps:
+      - intent: envy
+      - action: utter_handle_envy
+
+- story: User expresses guilt
+  steps:
+      - intent: guilt
+      - action: utter_handle_guilt
+
+- story: User expresses shame
+  steps:
+      - intent: shame
+      - action: utter_handle_shame
+- story: User asks to read a poem
+  steps:
+      - intent: read_poem
+      - action: utter_poem
+
+- story: User asks to hear a story
+  steps:
+      - intent: tell_story
+      - action: utter_story
+
+- story: User requests mental wellbeing book recommendations
+  steps:
+      - intent: recommend_mental_wellbeing_books
+      - action: utter_mbooks
+
+- story: User asks for regular book recommendations
+  steps:
+      - intent: recommend_regular_books
+      - action: utter_books
+
+
+

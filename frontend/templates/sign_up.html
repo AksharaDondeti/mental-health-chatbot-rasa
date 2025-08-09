@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+
+{% block title %}Sign Up{% endblock %}
+
+{% block content %}
+<html>
+<head>
+  <style>
+    @font-face {
+      font-family: 'Dairyland';
+      src: url("{{ url_for('static', filename='fonts/Dairyland.ttf') }}") format('truetype');
+    }
+    body {
+      background-color: #cadeed;
+    }
+    h1 {
+      color: maroon;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 40px;
+      font-family: 'Dairyland', sans-serif;
+    }
+    h3 {
+      color: maroon; /* Change color to maroon */
+      font-size: 24px; /* Increase size */
+      text-align: center;
+      margin-bottom: 30px; /* Increase space between heading and email label */
+    }
+    label {
+      color: maroon;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    nav {
+      font-size: 20px; /* Increase size of navbar text */
+    }
+  </style>
+</head>
+<body>
+ <!-- Title above the form -->
+  <form method="POST">
+    <h3>Sign Up</h3>
+    <div class="form-group">
+      <label for="email">Email Address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter first name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password1">Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password2">Confirm Password</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Confirm password"
+      />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</body>
+</html>
+{% endblock %}
