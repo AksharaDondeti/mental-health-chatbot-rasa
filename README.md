@@ -12,6 +12,8 @@ An intelligent mental health chatbot built with **Rasa**, **Flask**, and **Pytho
 - **Database Integration**: SQLite database for user management and session storage
 - **Responsive Design**: Modern, user-friendly web interface
 
+## Architecture
+<img src="https://github.com/AksharaDondeti/mental-health-chatbot-rasa/blob/master/screenshots/Architecture.png" alt="Architecture" width="500"/>
 
 ## Technologies Used
 
